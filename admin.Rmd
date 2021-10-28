@@ -1,0 +1,11 @@
+
+\vspace{7mm}
+
+# Administrative
+
+
+```{r admin}
+ezpickr::pick("data/admin.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```

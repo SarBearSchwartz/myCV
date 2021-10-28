@@ -1,21 +1,21 @@
 ---
 graphics: yes
-name: JooYoung
-surname: Seo
+name: Sarah E
+surname: Schwartz
 headcolor: 414141
-#qualifications: 
-position: "Ph.D.; RStudio Trusted Data Science Instructor"
-address: "614 E. Daniel St., Champaign, IL 61820"
-phone: "tbd"
-www: jooyoungseo.com
-email: "jseo1005@illinois.edu"
-twitter: seo_jooyoung
-github: jooyoungseo
-linkedin: jooyoungseo
+position: "Research Assistant Professor"
+address: "Utah State University"
+phone: (435) 797 - 0169
+www: "www.SarahSchwartzStats.com"
+email: "Sarah.Schwartz@usu.edu"
+twitter: USU_StatStudio
+github: SarBearSchwartz
+linkedin: SarBearSchwartz
 aboutme: |
-  I am a learning scientist, data-science/software engineer, and internationally certified accessibility professional.
+  I am a statistician with a passion for facilitating research that is appropriate, transparent, and reproducible.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
-csl: "csl/apa6-cv.csl"
+# csl: "csl/numeric-apa-cv.csl"
+# csl: "csl/apa7-cv.csl"
 nocite: "@*"
 header-includes:
   - \usepackage{fancyhdr}
@@ -23,20 +23,27 @@ header-includes:
   - \fancyhf{}
   - \fancyhead[R]{\thepage}
 knit: bookdown::render_book
-#bibliography_selected: "bib/selected.bib"
-bibliography_journals: "bib/journal.bib"
+bibliography_journals2021: "bib/journal2021.bib"
+bibliography_journals2020: "bib/journal2020.bib"
+bibliography_journals2019: "bib/journal2019.bib"
+bibliography_journals2018: "bib/journal2018.bib"
+bibliography_journals2017: "bib/journal2017before.bib"
+bibliography_journalspress: "bib/journalpress.bib"
+bibliography_confco: "bib/conf_coauthor.bib"
+bibliography_notpeer: "bib/notpeer.bib"
+bibliography_student: "bib/student.bib"
+bibliography_ebook: "bib/ebook.bib"
 bibliography_proceedings: "bib/proceedings.bib"
-bibliography_healthcare: "bib/healthcare.bib"
-bibliography_working_paper: "bib/working_paper.bib"
-bibliography_R_packages: "bib/R_packages.bib"
 bibliography_github_projects: "bib/github.bib"
-#given-name-pattern: JooYoung
-#family-name-pattern: Seo
+given-name-pattern: Sarah E.
+family-name-pattern: Schwartz
 ---
 
 ```{r setup, include=FALSE, cache = FALSE}
 library(knitr)
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo    = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
 library(vitae)
 library(tidyverse)
 library(ezpickr)

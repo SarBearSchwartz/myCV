@@ -1,3 +1,6 @@
+
+\vspace{5 mm}
+
 # Awards and Honors
 
 ```{r award}

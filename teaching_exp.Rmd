@@ -1,7 +1,49 @@
-# Teaching Experience
 
-```{r teaching-experience}
+\clearpage
+
+# Teaching Experience: Graduate Level
+
+```{r grad-teaching-experience}
 ezpickr::pick("data/teaching-experience.xlsx") %>%
   tidyr::fill(-why) %>%
+  dplyr::filter(level == "grad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\vspace{7 mm}
+
+# Teaching Experience: Undergraduate Level
+
+```{r undergrad-teaching-experience}
+ezpickr::pick("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "undergrad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\vspace{7 mm}
+
+
+# Teaching Experience: College-wide Workshops
+
+> \textsc{All sessions target the audience of faculty, research staff, adn graduate students in the college.  Starting in the Fall of 2019, the workshops were formalized to all enrollment for continuing education (1 CEU) or standard university credit (0.5 cr), in addition to the pervious a'la cart option.}
+
+
+```{r sessions}
+ezpickr::pick("data/workshops.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+
+# Talks
+
+
+```{r talks}
+ezpickr::pick("data/talk.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
   vitae::detailed_entries(what, when, with, where, why)
 ```

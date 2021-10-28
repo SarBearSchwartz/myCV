@@ -1,3 +1,6 @@
+
+\clearpage
+
 # Education
 
 ```{r education}

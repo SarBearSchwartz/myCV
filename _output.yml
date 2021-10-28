@@ -1,6 +1,8 @@
-#vitae::moderncv:
-#  theme: classic
-vitae::awesomecv:
+vitae::moderncv:
+ # theme: classic
+# vitae::awesomecv:
+  # classoption: letterpaper
+  latex_engine: xelatex
   fig_caption: yes
   keep_tex: yes
 #  keep_md: yes
@@ -11,5 +13,5 @@ vitae::awesomecv:
 # !expr rmdfiltr::add_wordcount_filter(rmdfiltr::add_replace_ampersands_filter(rmdfiltr::add_citeproc_filter(args = "--lua-filter=lua/multiple-bibliographies.lua")))
 #    - --biblatex
     - --lua-filter="lua/multiple-bibliographies.lua"
-#    - --lua-filter="lua/highlight-author.lua"
+   # - --lua-filter="lua/highlight-author.lua"
     - --lua-filter="lua/strong.lua"

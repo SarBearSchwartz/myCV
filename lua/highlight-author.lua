@@ -4,6 +4,7 @@ local List = require 'pandoc.List'
 local utils = require 'pandoc.utils'
 local stringify = utils.stringify
 
+
 function highlighter(given_name_pattern, family_name_pattern)
   local highlight_author = function (author)
     local given = author.given and stringify(author.given)

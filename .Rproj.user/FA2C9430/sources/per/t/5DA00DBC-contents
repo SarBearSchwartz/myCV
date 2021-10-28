@@ -1,0 +1,123 @@
+
+\clearpage
+
+# Publications
+
+<!-- ## Selected Publications
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_selected}
+:::
+\endgroup -->
+
+
+```{r, fig.width=6, fig.height=2, fig.align='center'}
+library(scholar)
+library(tidyverse)
+
+
+scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>% 
+  ggplot(aes(x = factor(year),
+             y = cites)) +
+  geom_col() +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Citations per Year\n(Google Scholar)")
+```
+
+
+
+
+
+## **Working Papers under Revision or Review**
+
+::: {#refs_journalspress}
+:::
+
+\vspace{7mm}
+
+## **Refereed Journal Papers - 2021**
+
+
+::: {#refs_journals2021}
+:::
+
+\vspace{7mm}
+
+
+## **Refereed Journal Papers - 2020**
+
+
+::: {#refs_journals2020}
+:::
+
+
+\vspace{7mm}
+
+## **Refereed Journal Papers - 2019**
+
+::: {#refs_journals2019}
+:::
+
+
+\vspace{7mm}
+
+
+## **Refereed Journal Papers - 2018**
+
+::: {#refs_journals2018}
+:::
+
+\vspace{7mm}
+
+
+## **Refereed Journal Papers - 2017 and Prior**
+
+::: {#refs_journals2017}
+:::
+
+
+\clearpage
+
+## **Papers in Refereed Conference Proceedings**
+
+::: {#refs_proceedings}
+:::
+
+
+\vspace{7mm}
+
+## **Conference Presentations Coauthored**
+
+::: {#refs_confco}
+:::
+
+
+
+\vspace{7mm}
+
+## **Work Not Peer Reviewed**
+
+::: {#refs_notpeer}
+:::
+
+
+\vspace{7mm}
+
+## **Disertation**
+
+::: {#refs_student}
+:::
+
+
+\vspace{7mm}
+
+## **Online eBook**
+
+::: {#refs_ebook}
+:::
+
+

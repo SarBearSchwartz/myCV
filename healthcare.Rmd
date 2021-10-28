@@ -1,4 +1,0 @@
-## Publications in Healthcare
-
-::: {#refs_healthcare}
-:::
