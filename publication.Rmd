@@ -39,6 +39,12 @@ scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>%
 
 \vspace{7mm}
 
+## **Refereed Journal Papers - 2022**
+
+
+::: {#refs_journals2022}
+:::
+
 ## **Refereed Journal Papers - 2021**
 
 

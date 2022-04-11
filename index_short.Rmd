@@ -23,19 +23,7 @@ header-includes:
   - \fancyhf{}
   - \fancyhead[R]{\thepage}
 knit: bookdown::render_book
-bibliography_journals2022: "bib/journal2022.bib"
-bibliography_journals2021: "bib/journal2021.bib"
-bibliography_journals2020: "bib/journal2020.bib"
-bibliography_journals2019: "bib/journal2019.bib"
-bibliography_journals2018: "bib/journal2018.bib"
-bibliography_journals2017: "bib/journal2017before.bib"
-bibliography_journalspress: "bib/journalpress.bib"
-bibliography_confco: "bib/conf_coauthor.bib"
-bibliography_notpeer: "bib/notpeer.bib"
-bibliography_student: "bib/student.bib"
-bibliography_ebook: "bib/ebook.bib"
-bibliography_proceedings: "bib/proceedings.bib"
-bibliography_github_projects: "bib/github.bib"
+bibliography_journalsfew: "bib/journal2022few.bib"
 given-name-pattern: Sarah E.
 family-name-pattern: Schwartz
 ---

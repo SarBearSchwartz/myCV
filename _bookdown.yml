@@ -1,6 +1,6 @@
 output_dir: "docs"
 rmd_files:
-  - "index.Rmd"
+  - "index_short.Rmd"
   - "appointment.Rmd"
   - "certificate.Rmd"
   - "education.Rmd"

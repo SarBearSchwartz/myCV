@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.4)  6 APR 2022 03:19
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.4)  12 JAN 2022 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**SchwartzSarah_CV.tex
-(./SchwartzSarah_CV.tex
+**SchwartzSarah_CV_short.tex
+(./SchwartzSarah_CV_short.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (./moderncv.cls
+L3 programming layer <2021-11-22> (./moderncv.cls
 Document Class: moderncv 2015/07/28 v2.0.0 modern curriculum vitae and letter d
 ocument class
 
@@ -16,7 +16,7 @@ File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etool
 box.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count181
+\etb@tempcnta=\count179
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.st
 y
@@ -54,7 +54,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \everycr=\toks17
 \minrowclearance=\skip49
 )
-\rownum=\count182
+\rownum=\count180
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1368.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
@@ -164,50 +164,50 @@ rs
 ) (./tweaklist.sty)
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count183
-\calc@Bcount=\count184
+\calc@Acount=\count181
+\calc@Bcount=\count182
 \calc@Adimen=\dimen142
 \calc@Bdimen=\dimen143
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count185
+\calc@Ccount=\count183
 \calc@Cskip=\skip61
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xpa
 rse/xparse.sty
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3
 .sty
-Package: expl3 2022-01-21 L3 programming layer (loader) 
+Package: expl3 2021-11-22 L3 programming layer (loader) 
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3ba
 ckend-xetex.def
-File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
+File: l3backend-xetex.def 2021-12-14 L3 backend support: XeTeX
 (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count186
-\l__color_backend_stack_int=\count187
-\g__color_backend_stack_int=\count188
-\g__graphics_track_int=\count189
+\c__kernel_sys_dvipdfmx_version_int=\count184
+\l__color_backend_stack_int=\count185
+\g__color_backend_stack_int=\count186
+\g__graphics_track_int=\count187
 \l__pdf_internal_box=\box52
-\g__pdf_backend_object_int=\count190
-\g__pdf_backend_annotation_int=\count191
-\g__pdf_backend_link_int=\count192
+\g__pdf_backend_object_int=\count188
+\g__pdf_backend_annotation_int=\count189
+\g__pdf_backend_link_int=\count190
 ))
-Package: xparse 2022-01-12 L3 Experimental document command parser
+Package: xparse 2021-11-12 L3 Experimental document command parser
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/micr
 otype.sty
 Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
 \MT@toks=\toks19
-\MT@count=\count193
+\MT@count=\count191
 \MT@tempbox=\box53
 LaTeX Info: Redefining \leftprotrusion on input line 1010.
 LaTeX Info: Redefining \rightprotrusion on input line 1018.
 LaTeX Info: Redefining \textls on input line 1173.
 \MT@outer@kern=\dimen144
 LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
-\MT@listname@count=\count194
+\MT@listname@count=\count192
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/micr
 otype-xetex.def
@@ -221,18 +221,18 @@ otype.cfg
 File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
 )) (./moderncvcollection.sty
 Package: moderncvcollection 2015/07/28 v2.0.0 moderncv collections
-\c@collection@iterator=\count195
+\c@collection@iterator=\count193
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/moderncv/moder
 ncvcompatibility.sty
 Package: moderncvcompatibility 2021-12-16 v2.3.0 modern curriculum vitae and le
 tter compatibility patches
 )
-\c@collection@phones@count=\count196
-\c@collection@socials@count=\count197
-\c@cvcolumnscounter=\count198
-\c@cvcolumnsautowidthcounter=\count199
-\c@tmpiteratorcounter=\count266
+\c@collection@phones@count=\count194
+\c@collection@socials@count=\count195
+\c@cvcolumnscounter=\count196
+\c@cvcolumnsautowidthcounter=\count197
+\c@tmpiteratorcounter=\count198
 \cvcolumnsdummywidth=\skip62
 \cvcolumnswidth=\skip63
 \cvcolumnsautowidth=\skip64
@@ -253,7 +253,7 @@ Package: fontawesome5 2021/06/04 v5.15.3 Font Awesome 5
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3k
 eys2e/l3keys2e.sty
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2021-11-12 LaTeX2e option processing using LaTeX3 keys
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/f
 ontawesome5-utex-helper.sty
@@ -310,9 +310,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 .sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count267
-\Gm@cntv=\count268
-\c@Gm@tempcnt=\count269
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
 \Gm@bindingoffset=\dimen145
 \Gm@wd@mp=\dimen146
 \Gm@odd@mp=\dimen147
@@ -376,8 +376,8 @@ tions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen153
-\Hy@linkcounter=\count270
-\Hy@pagecounter=\count271
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1en
 c.def
@@ -396,7 +396,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 xcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count272
+\Hy@SavedSpaceFactor=\count270
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc
 .def
@@ -410,7 +410,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count273
+\c@Hy@tempcnt=\count271
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen154
 
@@ -423,7 +423,7 @@ igintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count274
+\Fld@menulength=\count272
 \Field@Width=\dimen155
 \Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -441,9 +441,9 @@ ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count275
-\c@Item=\count276
-\c@Hfootnote=\count277
+\Hy@abspage=\count273
+\c@Item=\count274
+\c@Hfootnote=\count275
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -457,10 +457,10 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box59
-\c@Hy@AnnotLevel=\count278
-\HyField@AnnotCount=\count279
-\Fld@listcount=\count280
-\c@bookmark@seq@number=\count281
+\c@Hy@AnnotLevel=\count276
+\HyField@AnnotCount=\count277
+\Fld@listcount=\count278
+\c@bookmark@seq@number=\count279
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck
 /rerunfilecheck.sty
@@ -483,8 +483,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 87.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 87.
-(./SchwartzSarah_CV.aux)
-\openout1 = `SchwartzSarah_CV.aux'.
+(./SchwartzSarah_CV_short.aux)
+\openout1 = `SchwartzSarah_CV_short.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
@@ -576,14 +576,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ng/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count282
+\c@section@level=\count280
 )
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
-(./SchwartzSarah_CV.out) (./SchwartzSarah_CV.out)
+(./SchwartzSarah_CV_short.out) (./SchwartzSarah_CV_short.out)
 \@outlinefile=\write3
-\openout3 = `SchwartzSarah_CV.out'.
+\openout3 = `SchwartzSarah_CV_short.out'.
 
 \pagenumberwidth=\skip85
 \makecvheadpicturebox=\box60
@@ -676,74 +676,6 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [2
 
 ]
-Missing character: There is no ’ ("2019) in font ec-lmr10!
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[3
-
-]
-Overfull \hbox (14.61983pt too wide) in paragraph at lines 253--253
- []|[]\T1/lmr/m/n/10.95 Spring/Summer:
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[4
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[5]
-Missing character: There is no – ("2013) in font ec-lmro10!
-Missing character: There is no “ ("201C) in font ec-lmbx10!
-Missing character: There is no ” ("201D) in font ec-lmbx10!
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[6]
 Missing character: There is no ’ ("2019) in font ec-lmro10!
 Missing character: There is no – ("2013) in font ec-lmr10!
 Missing character: There is no ’ ("2019) in font ec-lmro10!
@@ -760,7 +692,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
-[7
+[3
 
 ]
 Missing character: There is no ﬀ ("FB00) in font ec-lmro10!
@@ -777,10 +709,10 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
-[8]
-File: SchwartzSarah_CV_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (t
-ype pdf)
-<use SchwartzSarah_CV_files/figure-latex/unnamed-chunk-2-1.pdf>
+[4]
+File: SchwartzSarah_CV_short_files/figure-latex/unnamed-chunk-1-1.pdf Graphic f
+ile (type pdf)
+<use SchwartzSarah_CV_short_files/figure-latex/unnamed-chunk-1-1.pdf>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -794,7 +726,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
-[9
+[5
 
 ]
 
@@ -806,151 +738,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 
-Overfull \hbox (5.59653pt too wide) has occurred while \output is active
-[]|\T1/lmr/m/it/10.95 10/[]15[] 
- []
-
-
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
-[10
+[6
 
-]
-Missing character: There is no ’ ("2019) in font ec-lmr10!
+] (./SchwartzSarah_CV_short.aux)
+Package rerunfilecheck Info: File `SchwartzSarah_CV_short.out' has not changed.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Overfull \hbox (5.59653pt too wide) has occurred while \output is active
-[]|\T1/lmr/m/it/10.95 11/[]15[] 
- []
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[11
-
-]
-Underfull \hbox (badness 3568) in paragraph at lines 613--613
-[]|\T1/lmr/bx/n/10.95 Cassity Haver-camp\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 
-Psy-chol-ogy - Com-bined Pro-gram\T1/lmr/m/n/10.95 , Utah State
- []
-
-Missing character: There is no ’ ("2019) in font ec-lmr10!
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Overfull \hbox (5.59653pt too wide) has occurred while \output is active
-[]|\T1/lmr/m/it/10.95 12/[]15[] 
- []
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[12]
-Underfull \hbox (badness 1226) in paragraph at lines 686--686
-[]|\T1/lmr/bx/n/10.95 J. Scott Crapo\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Hu-m
-an De-vel-op-ment & Fam-ily Stud-ies\T1/lmr/m/n/10.95 , Utah State
- []
-
-
-Underfull \hbox (badness 2368) in paragraph at lines 696--696
-[]|\T1/lmr/bx/n/10.95 Sarai Hold-brook\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Sp
-e-cial Ed-u-ca-tion and Re-ha-bil-i-ta-tion\T1/lmr/m/n/10.95 , Utah State
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 713--713
-[]|\T1/lmr/bx/n/10.95 Rylan Hel-stern\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Hu-
-man De-vel-op-ment & Fam-ily Stud-ies\T1/lmr/m/n/10.95 , Utah State
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Overfull \hbox (5.59653pt too wide) has occurred while \output is active
-[]|\T1/lmr/m/it/10.95 13/[]15[] 
- []
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Overfull \hbox (5.59653pt too wide) has occurred while \output is active
-[]|\T1/lmr/m/it/10.95 14/[]15[] 
- []
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[14]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Overfull \hbox (5.59653pt too wide) has occurred while \output is active
-[]|\T1/lmr/m/it/10.95 15/[]15[] 
- []
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[15
-
-] (./SchwartzSarah_CV.aux)
-Package rerunfilecheck Info: File `SchwartzSarah_CV.out' has not changed.
-(rerunfilecheck)             Checksum: B36984717161975C8AFD3B63BCE026EA;6514.
+(rerunfilecheck)             Checksum: 5BF283A27145F7D5AF534D66A0CAF2C1;3486.
  ) 
 Here is how much of TeX's memory you used:
- 13766 strings out of 478190
- 227949 string characters out of 5852831
- 566410 words of memory out of 5000000
- 34132 multiletter control sequences out of 15000+600000
- 524808 words of font info for 62 fonts, out of 8000000 for 9000
+ 13742 strings out of 478256
+ 227656 string characters out of 5854129
+ 569572 words of memory out of 5000000
+ 34039 multiletter control sequences out of 15000+600000
+ 458979 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,13n,105p,1013b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,13n,105p,1019b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on SchwartzSarah_CV.pdf (15 pages).
+Output written on SchwartzSarah_CV_short.pdf (6 pages).
