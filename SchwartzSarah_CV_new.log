@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.4)  12 JAN 2022 20:51
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.4)  24 MAY 2022 02:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**SchwartzSarah_CV_short.tex
-(./SchwartzSarah_CV_short.tex
+**SchwartzSarah_CV_new.tex
+(./SchwartzSarah_CV_new.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22> (./moderncv.cls
+L3 programming layer <2022-01-21> (./moderncv.cls
 Document Class: moderncv 2015/07/28 v2.0.0 modern curriculum vitae and letter d
 ocument class
 
@@ -16,7 +16,7 @@ File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etool
 box.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count179
+\etb@tempcnta=\count181
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.st
 y
@@ -54,7 +54,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \everycr=\toks17
 \minrowclearance=\skip49
 )
-\rownum=\count180
+\rownum=\count182
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1368.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
@@ -164,50 +164,50 @@ rs
 ) (./tweaklist.sty)
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count181
-\calc@Bcount=\count182
+\calc@Acount=\count183
+\calc@Bcount=\count184
 \calc@Adimen=\dimen142
 \calc@Bdimen=\dimen143
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count183
+\calc@Ccount=\count185
 \calc@Cskip=\skip61
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xpa
 rse/xparse.sty
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3
 .sty
-Package: expl3 2021-11-22 L3 programming layer (loader) 
+Package: expl3 2022-01-21 L3 programming layer (loader) 
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3ba
 ckend-xetex.def
-File: l3backend-xetex.def 2021-12-14 L3 backend support: XeTeX
+File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
 (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count184
-\l__color_backend_stack_int=\count185
-\g__color_backend_stack_int=\count186
-\g__graphics_track_int=\count187
+\c__kernel_sys_dvipdfmx_version_int=\count186
+\l__color_backend_stack_int=\count187
+\g__color_backend_stack_int=\count188
+\g__graphics_track_int=\count189
 \l__pdf_internal_box=\box52
-\g__pdf_backend_object_int=\count188
-\g__pdf_backend_annotation_int=\count189
-\g__pdf_backend_link_int=\count190
+\g__pdf_backend_object_int=\count190
+\g__pdf_backend_annotation_int=\count191
+\g__pdf_backend_link_int=\count192
 ))
-Package: xparse 2021-11-12 L3 Experimental document command parser
+Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/micr
 otype.sty
 Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
 \MT@toks=\toks19
-\MT@count=\count191
+\MT@count=\count193
 \MT@tempbox=\box53
 LaTeX Info: Redefining \leftprotrusion on input line 1010.
 LaTeX Info: Redefining \rightprotrusion on input line 1018.
 LaTeX Info: Redefining \textls on input line 1173.
 \MT@outer@kern=\dimen144
 LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
-\MT@listname@count=\count192
+\MT@listname@count=\count194
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/micr
 otype-xetex.def
@@ -221,18 +221,18 @@ otype.cfg
 File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
 )) (./moderncvcollection.sty
 Package: moderncvcollection 2015/07/28 v2.0.0 moderncv collections
-\c@collection@iterator=\count193
+\c@collection@iterator=\count195
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/moderncv/moder
 ncvcompatibility.sty
 Package: moderncvcompatibility 2021-12-16 v2.3.0 modern curriculum vitae and le
 tter compatibility patches
 )
-\c@collection@phones@count=\count194
-\c@collection@socials@count=\count195
-\c@cvcolumnscounter=\count196
-\c@cvcolumnsautowidthcounter=\count197
-\c@tmpiteratorcounter=\count198
+\c@collection@phones@count=\count196
+\c@collection@socials@count=\count197
+\c@cvcolumnscounter=\count198
+\c@cvcolumnsautowidthcounter=\count199
+\c@tmpiteratorcounter=\count266
 \cvcolumnsdummywidth=\skip62
 \cvcolumnswidth=\skip63
 \cvcolumnsautowidth=\skip64
@@ -253,7 +253,7 @@ Package: fontawesome5 2021/06/04 v5.15.3 Font Awesome 5
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3k
 eys2e/l3keys2e.sty
-Package: l3keys2e 2021-11-12 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/f
 ontawesome5-utex-helper.sty
@@ -310,9 +310,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 .sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count199
-\Gm@cntv=\count266
-\c@Gm@tempcnt=\count267
+\Gm@cnth=\count267
+\Gm@cntv=\count268
+\c@Gm@tempcnt=\count269
 \Gm@bindingoffset=\dimen145
 \Gm@wd@mp=\dimen146
 \Gm@odd@mp=\dimen147
@@ -376,8 +376,8 @@ tions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen153
-\Hy@linkcounter=\count268
-\Hy@pagecounter=\count269
+\Hy@linkcounter=\count270
+\Hy@pagecounter=\count271
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1en
 c.def
@@ -396,7 +396,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 xcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count270
+\Hy@SavedSpaceFactor=\count272
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc
 .def
@@ -410,7 +410,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count271
+\c@Hy@tempcnt=\count273
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen154
 
@@ -423,7 +423,7 @@ igintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count272
+\Fld@menulength=\count274
 \Field@Width=\dimen155
 \Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -441,9 +441,9 @@ ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count273
-\c@Item=\count274
-\c@Hfootnote=\count275
+\Hy@abspage=\count275
+\c@Item=\count276
+\c@Hfootnote=\count277
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -457,10 +457,10 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box59
-\c@Hy@AnnotLevel=\count276
-\HyField@AnnotCount=\count277
-\Fld@listcount=\count278
-\c@bookmark@seq@number=\count279
+\c@Hy@AnnotLevel=\count278
+\HyField@AnnotCount=\count279
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck
 /rerunfilecheck.sty
@@ -483,8 +483,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 87.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 87.
-(./SchwartzSarah_CV_short.aux)
-\openout1 = `SchwartzSarah_CV_short.aux'.
+(./SchwartzSarah_CV_new.aux)
+\openout1 = `SchwartzSarah_CV_new.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
@@ -576,14 +576,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ng/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count280
+\c@section@level=\count282
 )
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
-(./SchwartzSarah_CV_short.out) (./SchwartzSarah_CV_short.out)
+(./SchwartzSarah_CV_new.out) (./SchwartzSarah_CV_new.out)
 \@outlinefile=\write3
-\openout3 = `SchwartzSarah_CV_short.out'.
+\openout3 = `SchwartzSarah_CV_new.out'.
 
 \pagenumberwidth=\skip85
 \makecvheadpicturebox=\box60
@@ -660,6 +660,18 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [1
 
 ]
+LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
+(Font)              scaled to size 9.41699pt on input line 192.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 188--193
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 194--200
+[][] [] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -676,9 +688,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [2
 
 ]
-Missing character: There is no ’ ("2019) in font ec-lmro10!
-Missing character: There is no – ("2013) in font ec-lmr10!
-Missing character: There is no ’ ("2019) in font ec-lmro10!
+Missing character: There is no ’ ("2019) in font ec-lmr10!
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -695,7 +705,6 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [3
 
 ]
-Missing character: There is no ﬀ ("FB00) in font ec-lmro10!
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -709,24 +718,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
-[4]
-File: SchwartzSarah_CV_short_files/figure-latex/unnamed-chunk-1-1.pdf Graphic f
-ile (type pdf)
-<use SchwartzSarah_CV_short_files/figure-latex/unnamed-chunk-1-1.pdf>
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 68.00002pt, for example:
-(fancyhdr)                \setlength{\footskip}{68.00002pt}.
-
-[5
+[4
 
 ]
 
@@ -742,20 +734,925 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
-[6
+[5]
+Missing character: There is no “ ("201C) in font ec-lmbx10!
+Missing character: There is no ” ("201D) in font ec-lmbx10!
 
-] (./SchwartzSarah_CV_short.aux)
-Package rerunfilecheck Info: File `SchwartzSarah_CV_short.out' has not changed.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(rerunfilecheck)             Checksum: 5BF283A27145F7D5AF534D66A0CAF2C1;3486.
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[6]
+Missing character: There is no ’ ("2019) in font ec-lmro10!
+Missing character: There is no – ("2013) in font ec-lmr10!
+Missing character: There is no ’ ("2019) in font ec-lmro10!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[7
+
+]
+Missing character: There is no ﬀ ("FB00) in font ec-lmro10!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[8]
+File: SchwartzSarah_CV_new_files/figure-latex/unnamed-chunk-3-1.pdf Graphic fil
+e (type pdf)
+<use SchwartzSarah_CV_new_files/figure-latex/unnamed-chunk-3-1.pdf>
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 475--482
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 483--488
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 489--494
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 495--501
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 502--508
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 509--516
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 517--524
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 525--533
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 534--540
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 541--547
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 548--555
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[9
+
+]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 556--563
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 571--579
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 580--589
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 590--597
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 598--604
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 610--617
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 618--623
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 624--631
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 632--638
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 639--645
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 646--653
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 654--661
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 10/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[10]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 662--668
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 676--682
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 683--689
+[][] [] 
+ []
+
+Missing character: There is no ı ("131) in font ec-lmr10!
+Missing character: There is no ́ ("301) in font ec-lmr10!
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 690--698
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 699--705
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 706--712
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 713--720
+[][] [] 
+ []
+
+Missing character: There is no ı ("131) in font ec-lmr10!
+Missing character: There is no ́ ("301) in font ec-lmr10!
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 721--728
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 729--735
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 736--742
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 743--749
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 757--763
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 11/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[11]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 764--772
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 773--779
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 780--786
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 787--795
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 796--802
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 803--810
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 811--818
+[][] [] 
+ []
+
+Missing character: There is no ı ("131) in font ec-lmr10!
+Missing character: There is no ́ ("301) in font ec-lmr10!
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 819--827
+[][] [] 
+ []
+
+Missing character: There is no ı ("131) in font ec-lmr10!
+Missing character: There is no ́ ("301) in font ec-lmr10!
+Missing character: There is no ı ("131) in font ec-lmr10!
+Missing character: There is no ́ ("301) in font ec-lmr10!
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 828--835
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 843--850
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 851--858
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 12/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[12]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 859--866
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 867--873
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 881--889
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 890--898
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 899--907
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 908--916
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 917--924
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 925--931
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 932--940
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 941--948
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 949--957
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 13/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[13]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 958--965
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 966--974
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 975--984
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 985--993
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 994--1001
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 14/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[14]
+Missing character: There is no ı ("131) in font ec-lmr10!
+Missing character: There is no ́ ("301) in font ec-lmr10!
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1009--1017
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1018--1024
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1025--1031
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1032--1039
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1040--1046
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1047--1053
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1054--1060
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1068--1076
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1077--1085
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1086--1092
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1093--1099
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1100--1107
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 15/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[15
+
+]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1108--1114
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1115--1121
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1122--1130
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1131--1138
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1139--1146
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1147--1154
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1155--1162
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1163--1171
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1172--1179
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1180--1187
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1188--1195
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1196--1203
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 16/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[16]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1204--1212
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1213--1221
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1222--1230
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1231--1238
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1239--1248
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1249--1255
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1256--1263
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1264--1272
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1273--1282
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1283--1291
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1292--1299
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 17/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[17]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1300--1306
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1307--1314
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1315--1324
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1325--1333
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1334--1342
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1343--1351
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1352--1359
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1367--1373
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 18/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[18]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1382--1387
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1395--1400
+[][] [] 
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1401--1406
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 19/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[19
+
+]
+Missing character: There is no ’ ("2019) in font ec-lmr10!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 20/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[20
+
+]
+Underfull \hbox (badness 3568) in paragraph at lines 1484--1484
+[]|\T1/lmr/bx/n/10.95 Cassity Haver-camp\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 
+Psy-chol-ogy - Com-bined Pro-gram\T1/lmr/m/n/10.95 , Utah State
+ []
+
+Missing character: There is no ’ ("2019) in font ec-lmr10!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 21/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[21]
+Underfull \hbox (badness 1226) in paragraph at lines 1547--1547
+[]|\T1/lmr/bx/n/10.95 J. Scott Crapo\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Hu-m
+an De-vel-op-ment & Fam-ily Stud-ies\T1/lmr/m/n/10.95 , Utah State
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 1557--1557
+[]|\T1/lmr/bx/n/10.95 Sarai Hold-brook\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Sp
+e-cial Ed-u-ca-tion and Re-ha-bil-i-ta-tion\T1/lmr/m/n/10.95 , Utah State
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 1579--1579
+[]|\T1/lmr/bx/n/10.95 Rylan Hel-stern\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Hu-
+man De-vel-op-ment & Fam-ily Stud-ies\T1/lmr/m/n/10.95 , Utah State
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 22/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[22]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Overfull \hbox (5.59653pt too wide) has occurred while \output is active
+[]|\T1/lmr/m/it/10.95 23/[]23[] 
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (60.0pt): 
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
+
+[23] (./SchwartzSarah_CV_new.aux)
+Package rerunfilecheck Info: File `SchwartzSarah_CV_new.out' has not changed.
+(rerunfilecheck)             Checksum: B36984717161975C8AFD3B63BCE026EA;6514.
  ) 
 Here is how much of TeX's memory you used:
- 13742 strings out of 478256
- 227656 string characters out of 5854129
- 569572 words of memory out of 5000000
- 34039 multiletter control sequences out of 15000+600000
- 458979 words of font info for 61 fonts, out of 8000000 for 9000
+ 13770 strings out of 478190
+ 228169 string characters out of 5852831
+ 566440 words of memory out of 5000000
+ 34135 multiletter control sequences out of 15000+600000
+ 525119 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,13n,105p,1019b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,13n,105p,1017b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on SchwartzSarah_CV_short.pdf (6 pages).
+Output written on SchwartzSarah_CV_new.pdf (23 pages).

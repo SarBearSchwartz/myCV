@@ -1,6 +1,6 @@
 output_dir: "docs"
 rmd_files:
-  - "index_short.Rmd"
+  - "index.Rmd"
   - "appointment.Rmd"
   - "certificate.Rmd"
   - "education.Rmd"
@@ -15,5 +15,5 @@ rmd_files:
   - "membership.Rmd"
   - "service.Rmd"
   - "backmatter.Rmd"
-book_filename: "SchwartzSarah_CV"
+book_filename: "SchwartzSarah_CV_new"
 delete_merged_file: true

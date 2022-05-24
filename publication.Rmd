@@ -13,12 +13,14 @@
 :::
 \endgroup -->
 
-
-```{r, fig.width=6, fig.height=2, fig.align='center'}
+```{r, echo=FALSE, results='hide', message=FALSE, comment=FALSE, warning=FALSE, error=FALSE}
 library(scholar)
 library(tidyverse)
+```
 
 
+
+```{r, fig.width=6, fig.height=2, fig.align='center'}
 scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>% 
   ggplot(aes(x = factor(year),
              y = cites)) +
@@ -110,6 +112,8 @@ scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>%
 ::: {#refs_notpeer}
 :::
 
+
+\clearpage
 
 \vspace{7mm}
 

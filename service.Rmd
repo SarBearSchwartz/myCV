@@ -1,7 +1,5 @@
 
 
-\clearpage
-
 # Service
 
 ```{r service}
