@@ -8,7 +8,7 @@ address: "Utah State University"
 phone: (435) 797 - 0169
 www: "www.SarahSchwartzStats.com"
 email: "Sarah.Schwartz@usu.edu"
-twitter: USU_StatStudio
+#twitter: USU_StatStudio
 github: SarBearSchwartz
 linkedin: SarBearSchwartz
 aboutme: |
@@ -16,25 +16,29 @@ aboutme: |
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 # csl: "csl/numeric-apa-cv.csl"
 # csl: "csl/apa7-cv.csl"
+csl: "csl/apa7-cv-jy-edition.csl"
 nocite: "@*"
 header-includes:
-  - \usepackage{fancyhdr}
-  - \pagestyle{fancy}
-  - \fancyhf{}
-  - \fancyhead[R]{\thepage}
+  - \usepackage{xurl}
+  # - \usepackage{fancyhdr}
+  # - \pagestyle{fancy}
+  # - \fancyhf{}
+  # - \fancyhead[R]{\thepage}
 knit: bookdown::render_book
-bibliography_journals2022:  "bib/journal2022.bib"
-bibliography_journals2021:  "bib/journal2021.bib"
-bibliography_journals2020:  "bib/journal2020.bib"
-bibliography_journals2019:  "bib/journal2019.bib"
-bibliography_journals2018:  "bib/journal2018.bib"
-bibliography_journals2017:  "bib/journal2017before.bib"
-bibliography_journalspress: "bib/journalpress.bib"
-bibliography_confco:        "bib/conf_coauthor.bib"
-bibliography_notpeer:       "bib/notpeer.bib"
-bibliography_student:       "bib/student.bib"
-bibliography_ebook:         "bib/ebook.bib"
-bibliography_proceedings:   "bib/proceedings.bib"
+bibliography_journal2024:     "bib/journal2024.bib"
+bibliography_journal2023:     "bib/journal2023.bib"
+bibliography_journal2022:     "bib/journal2022.bib"
+bibliography_journal2021:     "bib/journal2021.bib"
+bibliography_journal2020:     "bib/journal2020.bib"
+bibliography_journal2019:     "bib/journal2019.bib"
+bibliography_journal2018:     "bib/journal2018.bib"
+bibliography_journal2017:     "bib/journal2017before.bib"
+bibliography_journalpress:    "bib/journalpress.bib"
+bibliography_confco:          "bib/conf_coauthor.bib"
+bibliography_notpeer:         "bib/notpeer.bib"
+bibliography_student:         "bib/student.bib"
+bibliography_ebook:           "bib/ebook.bib"
+bibliography_proceedings:     "bib/proceedings.bib"
 bibliography_github_projects: "bib/github.bib"
 given-name-pattern: Sarah E.
 family-name-pattern: Schwartz
@@ -47,5 +51,6 @@ knitr::opts_chunk$set(echo    = FALSE,
                       message = FALSE)
 library(vitae)
 library(tidyverse)
-library(ezpickr)
+library(vroom)
+library(readxl)
 ```

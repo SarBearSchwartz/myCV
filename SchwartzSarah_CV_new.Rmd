@@ -1,0 +1,553 @@
+---
+graphics: yes
+name: Sarah E
+surname: Schwartz
+headcolor: 414141
+position: "Research Assistant Professor"
+address: "Utah State University"
+phone: (435) 797 - 0169
+www: "www.SarahSchwartzStats.com"
+email: "Sarah.Schwartz@usu.edu"
+twitter: USU_StatStudio
+github: SarBearSchwartz
+linkedin: SarBearSchwartz
+aboutme: |
+  I am a statistician with a passion for facilitating research that is appropriate, transparent, and reproducible.
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+# csl: "csl/numeric-apa-cv.csl"
+# csl: "csl/apa7-cv.csl"
+nocite: "@*"
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \fancyhead[R]{\thepage}
+knit: bookdown::render_book
+bibliography_journals2023:    "bib/journal2023.bib"
+bibliography_journals2022:    "bib/journal2022.bib"
+bibliography_journals2021:    "bib/journal2021.bib"
+bibliography_journals2020:    "bib/journal2020.bib"
+bibliography_journals2019:    "bib/journal2019.bib"
+bibliography_journals2018:    "bib/journal2018.bib"
+bibliography_journals2017:    "bib/journal2017before.bib"
+bibliography_journalspress:   "bib/journalpress.bib"
+bibliography_confco:          "bib/conf_coauthor.bib"
+bibliography_notpeer:         "bib/notpeer.bib"
+bibliography_student:         "bib/student.bib"
+bibliography_ebook:           "bib/ebook.bib"
+bibliography_proceedings:     "bib/proceedings.bib"
+bibliography_github_projects: "bib/github.bib"
+given-name-pattern: Sarah E.
+family-name-pattern: Schwartz
+---
+
+```{r setup, include=FALSE, cache = FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo    = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+library(vitae)
+library(tidyverse)
+library(readxl)
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Academic Appointment
+
+```{r appointment}
+readxl::read_excel("data/appointment.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:appointment.Rmd-->
+
+
+\vspace{5 mm}
+
+# Certificates
+
+```{r certificate}
+readxl::read_excel("data/certificate.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:certificate.Rmd-->
+
+
+\clearpage
+
+# Education
+
+```{r education}
+readxl::read_excel("data/education.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:education.Rmd-->
+
+
+\vspace{5 mm}
+
+# Awards and Honors
+
+```{r award}
+readxl::read_excel("data/award.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:award.Rmd-->
+
+
+\vspace{5 mm}
+
+# Software
+
+<!-- ## Data Science Packages in Comprehensive R Archive Network (CRAN) -->
+
+<!-- ```{r R-package, echo = FALSE, cache = FALSE, eval = FALSE}
+knitr::write_bib(c('ezpickr', 'mboxr', 'youtubecaption'), "bib/R_packages.bib")
+#R_package <- suppressMessages(RefManageR::ReadBib("bib/R_packages.bib", check = FALSE))
+#RefManageR:::print.BibEntry(R_package)
+####vitae::bibliography_entries("bib/R_packages.bib")
+``` -->
+
+<!-- ::: {#refs_R_packages} -->
+<!-- ::: -->
+
+## **Program Proficiencies**
+
+```{r}
+tibble::tribble(
+  ~title,  ~bullet,
+  "R, R Studio, and R Markdown (LaTeX)",
+  "Data cleaning and wrangling, statistical analysis, and reproducible reporting",
+  "SAS, SPSS, MPlus, and G*Power",
+  "Data cleaning and wrangling, and statistical analysis",
+  "REDCap and Qualtrics",
+  "Creating forms and collecting data"
+) %>%  
+  vitae::detailed_entries(
+    what = title,
+    why = bullet
+  )
+```
+
+
+## **Open-Source Project on GitHub**
+
+<!-- ```{r github, echo = FALSE, cache = FALSE, eval=T}
+#knitr::write_bib(c('tactileR', 'ezviewr', 'jladown', 'edmdown'), "bib/github.bib")
+#github <- suppressMessages(RefManageR::ReadBib("bib/github.bib", check = FALSE))
+#RefManageR:::print.BibEntry(github)
+####vitae::bibliography_entries("bib/github.bib")
+``` -->
+
+::: {#refs_github_projects}
+:::
+
+<!-- ## Officially Code_Contributing R Packages -->
+
+<!-- * [My GitHub pull requests](https://github.com/pulls?q=is%3Apr+author%3Ajooyoungseo+archived%3Afalse+is%3Aclosed) have been peer-reviewed and merged for active data science R packages: -->
+
+```{r contribute}
+#knitr::write_bib(c('bookdown', 'distill', 'BrailleR', 'wordcountaddin'), "bib/contribute.bib")
+# ezpickr::pick("data/contribute.xlsx") %>%
+#   tidyr::fill(-why) %>%
+#   vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:software_dev.Rmd-->
+
+
+\clearpage
+
+# Continuing Education
+
+
+```{r contined}
+readxl::read_excel("data/contined.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:contined.Rmd-->
+
+
+\vspace{7mm}
+
+# Administrative
+
+
+```{r admin}
+readxl::read_excel("data/admin.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:admin.Rmd-->
+
+
+\clearpage
+
+# Teaching Experience: Graduate Level
+
+```{r grad-teaching-experience}
+readxl::read_excel("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "grad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\vspace{7 mm}
+
+# Teaching Experience: Undergraduate Level
+
+```{r undergrad-teaching-experience}
+readxl::read_excel("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "undergrad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\vspace{7 mm}
+
+
+# Teaching Experience: College-wide Workshops
+
+> \textsc{All sessions target the audience of faculty, research staff, adn graduate students in the college.  Starting in the Fall of 2019, the workshops were formalized to all enrollment for continuing education (1 CEU) or standard university credit (0.5 cr), in addition to the pervious a'la cart option.}
+
+
+```{r sessions}
+readxl::read_excel("data/workshops.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+
+# Talks
+
+
+```{r talks}
+readxl::read_excel("data/talk.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:teaching_exp.Rmd-->
+
+\clearpage
+
+# Grants: Funded
+
+
+
+```{r grant}
+readxl::read_excel("data/grant.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why, .protect = FALSE)
+```
+
+
+
+# Grants: Submitted or Revising
+
+
+```{r grant_revise}
+readxl::read_excel("data/grant_prep.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why, .protect = FALSE)
+```
+
+
+<!--chapter:end:grant.Rmd-->
+
+
+\clearpage
+
+# Publications
+
+<!-- ## Selected Publications
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_selected}
+:::
+\endgroup -->
+
+```{r, echo=FALSE, results='hide', message=FALSE, comment=FALSE, warning=FALSE, error=FALSE}
+library(scholar)
+library(tidyverse)
+```
+
+
+
+```{r, fig.width=6, fig.height=2, fig.align='center'}
+scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>% 
+  ggplot(aes(x = factor(year),
+             y = cites)) +
+  geom_col() +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Citations per Year\n(Google Scholar)")
+```
+
+
+
+
+
+## **Working Papers under Revision or Review**
+
+::: {#refs_journalspress}
+:::
+
+\vspace{7mm}
+
+
+## **Refereed Journal Papers - 2023**
+
+
+::: {#refs_journals2023}
+:::
+
+## **Refereed Journal Papers - 2022**
+
+
+::: {#refs_journals2022}
+:::
+
+## **Refereed Journal Papers - 2021**
+
+
+::: {#refs_journals2021}
+:::
+
+\vspace{7mm}
+
+
+## **Refereed Journal Papers - 2020**
+
+
+::: {#refs_journals2020}
+:::
+
+
+\vspace{7mm}
+
+## **Refereed Journal Papers - 2019**
+
+::: {#refs_journals2019}
+:::
+
+
+\vspace{7mm}
+
+
+## **Refereed Journal Papers - 2018**
+
+::: {#refs_journals2018}
+:::
+
+\vspace{7mm}
+
+
+## **Refereed Journal Papers - 2017 and Prior**
+
+::: {#refs_journals2017}
+:::
+
+
+\clearpage
+
+## **Papers in Refereed Conference Proceedings**
+
+::: {#refs_proceedings}
+:::
+
+
+\vspace{7mm}
+
+## **Conference Presentations Coauthored**
+
+::: {#refs_confco}
+:::
+
+
+
+\vspace{7mm}
+
+## **Work Not Peer Reviewed**
+
+::: {#refs_notpeer}
+:::
+
+
+\clearpage
+
+\vspace{7mm}
+
+## **Disertation**
+
+::: {#refs_student}
+:::
+
+
+\vspace{7mm}
+
+## **Online eBook**
+
+::: {#refs_ebook}
+:::
+
+
+
+<!--chapter:end:publication.Rmd-->
+
+\clearpage
+
+# Directed Student Learning 
+
+
+## **Research Assistants for the Statistical Consulting Studio**
+
+* Demi Culianos, 2020-2021
+* Jeremy Haynes, 2019-2020
+* Ryan Becker, 2019
+* Joseph Jones, 2018-2019
+* Morgan Kawamura, 2018
+* Fred Hints, 2018
+* Andy Craig, 2017-2018
+* Tyson Barrett, 2016-2017
+
+
+\vspace{7 mm}
+
+
+# Current Committees
+
+## **DOCTORAL**
+
+```{r phd_current_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "current",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+\vspace{7 mm}
+
+
+## **MASTERS**
+
+```{r ms_current_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "ms",
+                time == "current",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+    
+\vspace{7 mm}
+
+# Past Committees
+
+## **CHAIR**
+
+```{r phd_past_chair}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "past",
+                me == "mentor") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+\vspace{7 mm}
+
+    
+## **DOCTORAL**
+
+```{r phd_past_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "past",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+    
+\vspace{7 mm}
+
+## **MASTERS**
+
+
+```{r ms_past_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "ms",
+                time == "past",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+<!--chapter:end:students.Rmd-->
+
+
+\vspace{7 mm}
+
+# Current Memberships
+
+  * American Statistical Association (ASA)
+
+\vspace{7 mm}
+
+<!--chapter:end:membership.Rmd-->
+
+
+
+# Service
+
+```{r service}
+readxl::read_excel("data/service.xlsx") %>%
+  tidyr::fill(-where
+) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where)
+```
+
+
+
+<!--chapter:end:service.Rmd-->
+
+# Notes
+
+* This CV is reproducible; all the source code behind this CV is available on [this GitHub repo](https://github.com/sarbearschwartz/jy_CV){target="_blank"}.
+
+<!-- ![JooYoung Seo's Signature](data/signature.png)\ -->
+
+<!--chapter:end:backmatter.Rmd-->
+

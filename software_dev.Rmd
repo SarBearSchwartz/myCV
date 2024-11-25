@@ -1,5 +1,5 @@
 
-\vspace{5 mm}
+\clearpage
 
 # Software
 
@@ -15,7 +15,7 @@ knitr::write_bib(c('ezpickr', 'mboxr', 'youtubecaption'), "bib/R_packages.bib")
 <!-- ::: {#refs_R_packages} -->
 <!-- ::: -->
 
-## **Program Proficiencies**
+
 
 ```{r}
 tibble::tribble(
@@ -33,8 +33,9 @@ tibble::tribble(
   )
 ```
 
+\vspace{1 cm}
 
-## **Open-Source Project on GitHub**
+# R Packages on GitHub
 
 <!-- ```{r github, echo = FALSE, cache = FALSE, eval=T}
 #knitr::write_bib(c('tactileR', 'ezviewr', 'jladown', 'edmdown'), "bib/github.bib")
@@ -43,8 +44,13 @@ tibble::tribble(
 ####vitae::bibliography_entries("bib/github.bib")
 ``` -->
 
-::: {#refs_github_projects}
-:::
+<!-- ::: {#refs_github_projects} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/github.bib")
+```
+
 
 <!-- ## Officially Code_Contributing R Packages -->
 

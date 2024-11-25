@@ -1,0 +1,5 @@
+"0","ezpickr::pick(""data/appointment.xlsx"") %>%"
+"0","  tidyr::fill(-why) %>%"
+"0","  vitae::detailed_entries(what, when, with, where, why)"
+"2","Error in loadNamespace(x) : there is no package called ‘ezpickr’
+"

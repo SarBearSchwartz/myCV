@@ -5,21 +5,37 @@
 
 
 ```{r grant}
-ezpickr::pick("data/grant.xlsx") %>%
+readxl::read_excel("data/grant.xlsx") %>%
   tidyr::fill(-why) %>%
   dplyr::arrange(desc(order)) %>% 
-  vitae::detailed_entries(what, when, with, where, why, .protect = FALSE)
+  vitae::detailed_entries(what, when, with, where, why, 
+                          .protect = FALSE)
 ```
 
+\clearpage
+
+# Grants: Recently Submitted
 
 
-# Grants: Submitted or Revising
+```{r grant_submit}
+readxl::read_excel("data/grant_prep.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(stage == "sent") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why, 
+                          .protect = FALSE)
+```
+
+\clearpage
+
+# Grants: Currently Drafting or Revising 
 
 
 ```{r grant_revise}
-ezpickr::pick("data/grant_prep.xlsx") %>%
+readxl::read_excel("data/grant_prep.xlsx") %>%
   tidyr::fill(-why) %>%
+  dplyr::filter(stage == "prep") %>% 
   dplyr::arrange(desc(order)) %>% 
-  vitae::detailed_entries(what, when, with, where, why, .protect = FALSE)
+  vitae::detailed_entries(what, when, with, where, why, 
+                          .protect = FALSE)
 ```
-

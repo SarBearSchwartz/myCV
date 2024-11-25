@@ -5,7 +5,7 @@
 
 
 ```{r admin}
-ezpickr::pick("data/admin.xlsx") %>%
+readxl::read_excel("data/admin.xlsx") %>%
   tidyr::fill(-why) %>%
   vitae::detailed_entries(what, when, with, where, why)
 ```

@@ -1,17 +1,10 @@
 
 \clearpage
 
-# Publications
+# Publications: Citations
 
-<!-- ## Selected Publications
 
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
-
-::: {#refs_selected}
-:::
-\endgroup -->
+\vspace{7mm}
 
 ```{r, echo=FALSE, results='hide', message=FALSE, comment=FALSE, warning=FALSE, error=FALSE}
 library(scholar)
@@ -20,114 +13,316 @@ library(tidyverse)
 
 
 
-```{r, fig.width=6, fig.height=2, fig.align='center'}
+```{r, fig.width=6, fig.height=3, fig.align='center'}
 scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>% 
   ggplot(aes(x = factor(year),
              y = cites)) +
+  geom_rect(aes(xmin = "2013", xmax = "2017", 
+                ymin = -25, ymax = 250),
+            alpha = .02) +
+  annotate(geom = "text",
+           x = "2015",
+           y = 300,
+           label = "Doctoral Program") +
   geom_col() +
   theme_bw() +
   labs(x = "Year",
-       y = "Citations per Year\n(Google Scholar)")
+       y = "Citations per Year\n(Google Scholar)") 
 ```
 
 
-
-
-
-## **Working Papers under Revision or Review**
-
-::: {#refs_journalspress}
-:::
-
 \vspace{7mm}
 
-## **Refereed Journal Papers - 2022**
+# Publications: Working Papers under Revision or Review
 
 
-::: {#refs_journals2022}
-:::
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
 
-## **Refereed Journal Papers - 2021**
+<!-- ::: {#refs_journalpress} -->
+<!-- ::: -->
 
+```{r}
+bibliography_entries("bib/journalpress.bib")
+```
 
-::: {#refs_journals2021}
-:::
+\endgroup
 
-\vspace{7mm}
-
-
-## **Refereed Journal Papers - 2020**
-
-
-::: {#refs_journals2020}
-:::
-
-
-\vspace{7mm}
-
-## **Refereed Journal Papers - 2019**
-
-::: {#refs_journals2019}
-:::
-
-
-\vspace{7mm}
-
-
-## **Refereed Journal Papers - 2018**
-
-::: {#refs_journals2018}
-:::
-
-\vspace{7mm}
-
-
-## **Refereed Journal Papers - 2017 and Prior**
-
-::: {#refs_journals2017}
-:::
 
 
 \clearpage
 
-## **Papers in Refereed Conference Proceedings**
+# Publications: Refereed Journal Papers - 2024
 
-::: {#refs_proceedings}
-:::
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
 
+<!-- ::: {#refs_journal2024} -->
+<!-- ::: -->
 
-\vspace{7mm}
+```{r}
+bibliography_entries("bib/journal2024.bib")
+```
 
-## **Conference Presentations Coauthored**
-
-::: {#refs_confco}
-:::
-
-
-
-\vspace{7mm}
-
-## **Work Not Peer Reviewed**
-
-::: {#refs_notpeer}
-:::
-
-
-\clearpage
-
-\vspace{7mm}
-
-## **Disertation**
-
-::: {#refs_student}
-:::
+\endgroup
 
 
 \vspace{7mm}
 
-## **Online eBook**
 
-::: {#refs_ebook}
-:::
+# Publications: Refereed Journal Papers - 2023
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2023} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2023.bib")
+```
+
+\endgroup
 
 
+\vspace{7mm}
+
+# Publications: Refereed Journal Papers - 2022
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2022} -->
+<!-- ::: -->
+
+
+```{r}
+bibliography_entries("bib/journal2022.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+# Publications: Refereed Journal Papers - 2021
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2021} -->
+<!-- ::: -->
+
+
+```{r}
+bibliography_entries("bib/journal2021.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+# Publications: Refereed Journal Papers - 2020
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2020} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2020.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+# Publications: Refereed Journal Papers - 2019
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2019} -->
+<!-- ::: -->
+
+
+```{r}
+bibliography_entries("bib/journal2019.bib")
+```
+
+\endgroup
+
+
+
+
+\vspace{7mm}
+
+
+# Publications: Refereed Journal Papers - 2018
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2018} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2018.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+
+# Publications: Refereed Journal Papers - 2017 and Prior
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2017} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2017before.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+
+# Publications: Papers in Refereed Conference Proceedings
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_proceedings} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/proceedings.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+# Publications: Conference Presentations, Coauthored
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_confco} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/conf_coauthor.bib")
+```
+
+\endgroup
+
+
+
+\vspace{7mm}
+
+
+# Publications: Work Not Peer Reviewed
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_notpeer} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/notpeer.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+
+# Publications: Disertation
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+
+<!-- ::: {#refs_student} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/student.bib")
+```
+
+\endgroup
+
+
+
+\vspace{7mm}
+
+
+# Publications: Online eBooks
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_ebook} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/ebook.bib")
+```
+
+
+\endgroup

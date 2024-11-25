@@ -1,0 +1,4 @@
+"0","readxl::read_excel(""data/grant.xlsx"") %>%"
+"0","  tidyr::fill(-why) %>%"
+"0","  dplyr::arrange(desc(order)) %>% "
+"0","  vitae::detailed_entries(what, when, with, where, why, .protect = FALSE)"

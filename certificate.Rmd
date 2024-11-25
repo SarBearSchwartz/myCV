@@ -4,7 +4,7 @@
 # Certificates
 
 ```{r certificate}
-ezpickr::pick("data/certificate.xlsx") %>%
+readxl::read_excel("data/certificate.xlsx") %>%
   tidyr::fill(-why) %>%
   vitae::detailed_entries(what, when, with, where, why)
 ```

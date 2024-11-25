@@ -5,9 +5,9 @@ rmd_files:
   - "certificate.Rmd"
   - "education.Rmd"
   - "award.Rmd"
+  - "admin.Rmd"
   - "software_dev.Rmd"
   - "contined.Rmd"
-  - "admin.Rmd"
   - "teaching_exp.Rmd"
   - "grant.Rmd"
   - "publication.Rmd"
@@ -15,5 +15,5 @@ rmd_files:
   - "membership.Rmd"
   - "service.Rmd"
   - "backmatter.Rmd"
-book_filename: "SchwartzSarah_CV_new"
+book_filename: "SchwartzSarah_CV_spr2024"
 delete_merged_file: true

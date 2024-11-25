@@ -1,0 +1,6 @@
+"0","library(knitr)"
+"0","knitr::opts_chunk$set(echo    = FALSE, "
+"0","                      warning = FALSE, "
+"0","                      message = FALSE)"
+"0","library(vitae)"
+"0","library(tidyverse)"

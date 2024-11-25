@@ -5,7 +5,7 @@
 
 
 ```{r contined}
-ezpickr::pick("data/contined.xlsx") %>%
+readxl::read_excel("data/contined.xlsx") %>%
   tidyr::fill(-why) %>%
   vitae::detailed_entries(what, when, with, where, why)
 ```

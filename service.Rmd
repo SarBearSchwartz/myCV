@@ -3,7 +3,7 @@
 # Service
 
 ```{r service}
-ezpickr::pick("data/service.xlsx") %>%
+readxl::read_excel("data/service.xlsx") %>%
   tidyr::fill(-where
 ) %>%
   dplyr::arrange(desc(order)) %>% 
