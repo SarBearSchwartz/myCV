@@ -5,7 +5,8 @@
 
 
 ```{r grant}
-readxl::read_excel("data/grant.xlsx") %>%
+readxl::read_excel("data/grant.xlsx",
+                   sheet = "funded") %>%
   tidyr::fill(-why) %>%
   dplyr::arrange(desc(order)) %>% 
   vitae::detailed_entries(what, when, with, where, why, 
@@ -18,9 +19,9 @@ readxl::read_excel("data/grant.xlsx") %>%
 
 
 ```{r grant_submit}
-readxl::read_excel("data/grant_prep.xlsx") %>%
+readxl::read_excel("data/grant.xlsx",
+                   sheet = "submitted") %>%
   tidyr::fill(-why) %>%
-  dplyr::filter(stage == "sent") %>% 
   dplyr::arrange(desc(order)) %>% 
   vitae::detailed_entries(what, when, with, where, why, 
                           .protect = FALSE)
@@ -32,9 +33,9 @@ readxl::read_excel("data/grant_prep.xlsx") %>%
 
 
 ```{r grant_revise}
-readxl::read_excel("data/grant_prep.xlsx") %>%
+readxl::read_excel("data/grant.xlsx",
+                   sheet = "preping") %>%
   tidyr::fill(-why) %>%
-  dplyr::filter(stage == "prep") %>% 
   dplyr::arrange(desc(order)) %>% 
   vitae::detailed_entries(what, when, with, where, why, 
                           .protect = FALSE)

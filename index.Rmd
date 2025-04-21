@@ -25,6 +25,7 @@ header-includes:
   # - \fancyhf{}
   # - \fancyhead[R]{\thepage}
 knit: bookdown::render_book
+bibliography_journal2025:     "bib/journal2025.bib"
 bibliography_journal2024:     "bib/journal2024.bib"
 bibliography_journal2023:     "bib/journal2023.bib"
 bibliography_journal2022:     "bib/journal2022.bib"

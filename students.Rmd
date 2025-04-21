@@ -34,7 +34,7 @@ readxl::read_excel("data/students.xlsx") %>%
 ```
 
 
-\vspace{7 mm}
+\clearpage
 
 
 ## **MASTERS**
@@ -51,7 +51,7 @@ readxl::read_excel("data/students.xlsx") %>%
 
 
     
-\clearpage
+\vspace{7 mm}
 
 # Past Committees
 

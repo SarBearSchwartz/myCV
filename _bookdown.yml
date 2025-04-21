@@ -15,5 +15,5 @@ rmd_files:
   - "membership.Rmd"
   - "service.Rmd"
   - "backmatter.Rmd"
-book_filename: "SchwartzSarah_CV_dec2024"
+book_filename: "SchwartzSarah_CV_spr2025"
 delete_merged_file: true

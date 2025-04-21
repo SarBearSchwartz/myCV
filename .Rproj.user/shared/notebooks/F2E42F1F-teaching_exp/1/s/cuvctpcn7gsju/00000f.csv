@@ -1,0 +1,29 @@
+"0","df_eval %>% 
+  dplyr::filter(course %in% c(""PSY 6600"", ""PSY 7650"")) %>%
+  ggplot(aes(x = time,
+             y = excellent_teacher,
+             group = course)) +
+  geom_hline(yintercept = c(37, 50, 62),
+             linetype = ""dotted"") +
+  geom_rect(ymin = 45,
+            ymax = 55,
+            xmin = lubridate::ydm(""2015/1/1""),
+            xmax = lubridate::ymd(""2024/12/31""),
+            fill = ""gray"",
+            alpha = .01) +
+  geom_line(aes(linetype = course)) +
+  geom_point(aes(shape = course),
+             size = 3) +
+  theme_bw() +
+  labs(x = NULL,
+       y = ""Rating: Excellent Teacher (IDEA Database)"",
+       linetype = NULL,
+       shape = NULL) +
+  # scale_linetype_manual(values = c(""solid"", ""longdash"")) +
+  theme(legend.position = c(0, 0),
+        legend.justification = c(-.1, -.1),
+        legend.background = element_rect(color = ""black""),
+        legend.key.width = unit(2, ""cm""))
+"
+"2","Warning: A numeric `legend.position` argument in `theme()` was deprecated in ggplot2 3.5.0.
+Please use the `legend.position.inside` argument of `theme()` instead."

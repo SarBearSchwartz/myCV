@@ -1,0 +1,100 @@
+\clearpage
+
+# Directed Student Learning 
+
+
+## **Research Assistants for the Statistical Consulting Studio**
+
+* Liam O'Neil, 2022-2024
+* Demi Culianos, 2020-2021
+* Jeremy Haynes, 2019-2020
+* Ryan Becker, 2019
+* Joseph Jones, 2018-2019
+* Morgan Kawamura, 2018
+* Fred Hints, 2018
+* Andy Craig, 2017-2018
+* Tyson Barrett, 2016-2017
+
+
+\vspace{7 mm}
+
+
+# Current Committees
+
+## **DOCTORAL**
+
+```{r phd_current_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "current",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+\clearpage
+
+
+## **MASTERS**
+
+```{r ms_current_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "ms",
+                time == "current",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+    
+\vspace{7 mm}
+
+# Past Committees
+
+## **CHAIR**
+
+```{r phd_past_chair}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "past",
+                me == "mentor") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+\vspace{7 mm}
+
+    
+## **DOCTORAL**
+
+```{r phd_past_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "past",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+    
+\vspace{7 mm}
+
+## **MASTERS**
+
+
+```{r ms_past_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "ms",
+                time == "past",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+

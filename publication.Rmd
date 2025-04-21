@@ -13,25 +13,26 @@ library(tidyverse)
 
 
 
-```{r, fig.width=6, fig.height=3, fig.align='center'}
+```{r, fig.width=6, fig.height=2.85, fig.align='center'}
 scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>% 
-  ggplot(aes(x = factor(year),
+  ggplot(aes(x = year,
              y = cites)) +
-  geom_rect(aes(xmin = "2013", xmax = "2017", 
+  geom_rect(aes(xmin = 2013, xmax = 2017, 
                 ymin = -25, ymax = 250),
             alpha = .02) +
   annotate(geom = "text",
-           x = "2015",
+           x = 2015,
            y = 300,
            label = "Doctoral Program") +
   geom_col() +
   theme_bw() +
-  labs(x = "Year",
-       y = "Citations per Year\n(Google Scholar)") 
+  labs(x = NULL,
+       y = "Citations per Year\n(Google Scholar)") +
+  scale_x_continuous(breaks = seq(from = 2012, to = 2025, by = 2))
 ```
 
 
-\vspace{7mm}
+\vspace{4mm}
 
 # Publications: Working Papers under Revision or Review
 
@@ -49,9 +50,27 @@ bibliography_entries("bib/journalpress.bib")
 
 \endgroup
 
+\vspace{7mm}
+
+# Publications: Refereed Journal Papers - 2025
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2025} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2025.bib")
+```
+
+\endgroup
 
 
-\clearpage
+\vspace{7mm}
+
+
 
 # Publications: Refereed Journal Papers - 2024
 
@@ -194,7 +213,7 @@ bibliography_entries("bib/journal2018.bib")
 \endgroup
 
 
-\vspace{7mm}
+\clearpage
 
 
 
@@ -217,7 +236,7 @@ bibliography_entries("bib/journal2017before.bib")
 \endgroup
 
 
-\vspace{7mm}
+\clearpage
 
 
 
@@ -262,7 +281,7 @@ bibliography_entries("bib/conf_coauthor.bib")
 
 
 
-\vspace{7mm}
+\clearpage
 
 
 # Publications: Work Not Peer Reviewed

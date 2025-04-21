@@ -1,0 +1,13 @@
+
+
+# Service
+
+```{r service}
+readxl::read_excel("data/service.xlsx") %>%
+  tidyr::fill(-where
+) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where)
+```
+
+

@@ -1,0 +1,218 @@
+
+\clearpage
+
+<!-- # Teaching: Course Evaluations -->
+
+```{r, warning=FALSE, message=FALSE, error=FALSE}
+library(tidyverse)
+library(readxl)
+```
+
+
+
+```{r}
+df_eval <- readxl::read_excel("data/courseeval_vs_database_SS_2024-05-03.xlsx") %>% 
+  janitor::clean_names() %>% 
+  tidyr::separate(col = year_and_semester, 
+                  into = c("year", "sem"),
+                  remove = FALSE) %>% 
+  dplyr::mutate(course = 
+                  case_when(stringr::str_match(course_num, 
+                                               pattern = "STAT 2000") > 0 ~ "STAT 2000",
+                            stringr::str_match(course_num, 
+                                               pattern = "PSY 3010") > 0 ~ "PSY 3010",
+                            stringr::str_match(course_num, 
+                                               pattern = "PSY 6600") > 0 ~ "PSY 6600",
+                            stringr::str_match(course_num, 
+                                               pattern = "PSY 7650") > 0 ~ "PSY 7650")) %>% 
+  dplyr::mutate(num = response_rate*enrolled) %>% 
+  dplyr::mutate(year = as.numeric(year)) %>% 
+  dplyr::mutate(sem = factor(sem, levels = c("Spring", "Summer", "Fall"))) %>% 
+  dplyr::mutate(course = factor(course)) %>% 
+  dplyr::mutate(time = (year - 2014)*3 + as.numeric(sem) - 1) %>% 
+  dplyr::arrange(year, sem) %>% 
+  dplyr::mutate(time = case_when(sem == "Spring" ~ lubridate::ymd(paste(year,  3, 1, sep = "/")),
+                                 sem == "Summer" ~ lubridate::ymd(paste(year,  6, 15, sep = "/")),
+                                 sem == "Fall"   ~ lubridate::ymd(paste(year, 10, 1, sep = "/")))) %>% 
+  dplyr::select(time, year, sem, 
+                course, 
+                rate = response_rate, enrolled, num,
+                progress_on_objectives,
+                excellent_teacher,
+                excellent_course,
+                summary_evaluation)
+```
+
+
+```{r, include=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>% 
+  dplyr::arrange(course, time)
+```
+
+
+```{r, include=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>%
+  ggplot(aes(x = time,
+             y = excellent_teacher,
+             group = course)) +
+  geom_hline(yintercept = c(37, 50, 62),
+             linetype = "dotted") +
+  geom_rect(ymin = 45,
+            ymax = 55,
+            xmin = lubridate::ydm("2015/1/1"),
+            xmax = lubridate::ymd("2024/12/31"),
+            fill = "gray",
+            alpha = .01) +
+  geom_line(aes(linetype = course)) +
+  geom_point(aes(shape = course),
+             size = 3) +
+  theme_bw() +
+  labs(x = NULL,
+       y = "Rating: Excellent Teacher (IDEA Database)",
+       linetype = NULL,
+       shape = NULL) +
+  # scale_linetype_manual(values = c("solid", "longdash")) +
+  theme(legend.position = c(0, 0),
+        legend.justification = c(-.1, -.1),
+        legend.background = element_rect(color = "black"),
+        legend.key.width = unit(2, "cm"))
+```
+
+
+
+```{r, fig.width=6, fig.height=7, eval=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>%
+  tidyr::pivot_longer(cols = c(progress_on_objectives,
+                               excellent_teacher,
+                               excellent_course,
+                               summary_evaluation)) %>% 
+  dplyr::mutate(name = factor(name) %>% 
+                  forcats::fct_recode("Student Progress on Objectives" =
+                                        "progress_on_objectives",
+                                      "Excellent: Teacher" = "excellent_teacher",
+                                      "Excellent: Course" = "excellent_course",
+                                      "Summary" = "summary_evaluation")) %>% 
+  ggplot(aes(x = time,
+             y = value,
+             group = course)) +
+  geom_hline(yintercept = c(37, 50, 62),
+             linetype = "dotted") +
+  geom_rect(ymin = 45,
+            ymax = 55,
+            xmin = lubridate::ydm("2015/1/1"),
+            xmax = lubridate::ymd("2024/12/31"),
+            fill = "gray",
+            alpha = .01) +
+  geom_line(aes(linetype = course)) +
+  geom_point(aes(shape = course),
+             size = 2.5) +
+  theme_bw() +
+  labs(x = NULL,
+       y = "Mean Rating vs. IDEA Database",
+       linetype = NULL,
+       shape = NULL) +
+  scale_linetype_manual(values = c("solid", "longdash")) +
+  theme(legend.position = "bottom",
+        # legend.position = c(0, 0),
+        # legend.justification = c(-.1, -.1),
+        # legend.background = element_rect(color = "black"),
+        legend.key.width = unit(2, "cm")) +
+  facet_wrap(~ name, ncol = 1)
+```
+
+
+
+
+
+```{r, fig.width=6, fig.height=7, eval=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>%
+  tidyr::pivot_longer(cols = c(progress_on_objectives,
+                               excellent_teacher,
+                               excellent_course,
+                               summary_evaluation)) %>% 
+  dplyr::mutate(name = factor(name) %>% 
+                  forcats::fct_recode("Student Progress on Objectives" =
+                                        "progress_on_objectives",
+                                      "Excellent: Teacher" = "excellent_teacher",
+                                      "Excellent: Course" = "excellent_course",
+                                      "Summary" = "summary_evaluation")) %>% 
+  ggplot(aes(x = time,
+             y = value,
+             group = name)) +
+  geom_hline(yintercept = c(37, 50, 62),
+             linetype = "dotted") +
+  geom_rect(ymin = 45,
+            ymax = 55,
+            xmin = lubridate::ydm("2015/1/1"),
+            xmax = lubridate::ymd("2024/12/31"),
+            fill = "gray",
+            alpha = .01) +
+  geom_line(aes(linetype = name)) +
+  geom_point(aes(shape = name),
+             size = 2.5) +
+  theme_bw() +
+  labs(x = NULL,
+       y = "Mean Rating vs. IDEA Database",
+       linetype = NULL,
+       shape = NULL) +
+  # scale_linetype_manual(values = c("solid", "longdash")) +
+  theme(legend.position = "bottom",
+        # legend.position = c(0, 0),
+        # legend.justification = c(-.1, -.1),
+        # legend.background = element_rect(color = "black"),
+        legend.direction = "vertical",
+        legend.key.width = unit(2, "cm")) +
+  facet_wrap(~ course, ncol = 1)
+```
+
+
+# Teaching Experience: Graduate Level
+
+```{r grad-teaching-experience}
+readxl::read_excel("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "grad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\clearpage
+
+# Teaching Experience: Undergraduate Level
+
+```{r undergrad-teaching-experience}
+readxl::read_excel("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "undergrad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\clearpage
+
+
+# Teaching Experience: College-wide Workshops
+
+> \textsc{All sessions target the audience of faculty, research staff, adn graduate students in the college.  Starting in the Fall of 2019, the workshops were formalized to all enrollment for continuing education (1 CEU) or standard university credit (0.5 cr), in addition to the pervious a'la cart option.}
+
+
+```{r sessions}
+readxl::read_excel("data/workshops.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\clearpage
+
+# Talks
+
+
+```{r talks}
+readxl::read_excel("data/talk.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```

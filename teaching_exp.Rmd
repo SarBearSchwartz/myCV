@@ -179,7 +179,7 @@ readxl::read_excel("data/teaching-experience.xlsx") %>%
   vitae::detailed_entries(what, when, with, where, why)
 ```
 
-\vspace{7 mm}
+\clearpage
 
 # Teaching Experience: Undergraduate Level
 
@@ -190,7 +190,7 @@ readxl::read_excel("data/teaching-experience.xlsx") %>%
   vitae::detailed_entries(what, when, with, where, why)
 ```
 
-\vspace{7 mm}
+\clearpage
 
 
 # Teaching Experience: College-wide Workshops
