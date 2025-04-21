@@ -1,0 +1,937 @@
+---
+graphics: yes
+name: Sarah E
+surname: Schwartz
+headcolor: 414141
+position: "Research Assistant Professor"
+address: "Utah State University"
+phone: (435) 797 - 0169
+www: "www.SarahSchwartzStats.com"
+email: "Sarah.Schwartz@usu.edu"
+#twitter: USU_StatStudio
+github: SarBearSchwartz
+linkedin: SarBearSchwartz
+aboutme: |
+  I am a statistician with a passion for facilitating research that is appropriate, transparent, and reproducible.
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+# csl: "csl/numeric-apa-cv.csl"
+# csl: "csl/apa7-cv.csl"
+csl: "csl/apa7-cv-jy-edition.csl"
+nocite: "@*"
+header-includes:
+  - \usepackage{xurl}
+  # - \usepackage{fancyhdr}
+  # - \pagestyle{fancy}
+  # - \fancyhf{}
+  # - \fancyhead[R]{\thepage}
+knit: bookdown::render_book
+bibliography_journal2024:     "bib/journal2024.bib"
+bibliography_journal2023:     "bib/journal2023.bib"
+bibliography_journal2022:     "bib/journal2022.bib"
+bibliography_journal2021:     "bib/journal2021.bib"
+bibliography_journal2020:     "bib/journal2020.bib"
+bibliography_journal2019:     "bib/journal2019.bib"
+bibliography_journal2018:     "bib/journal2018.bib"
+bibliography_journal2017:     "bib/journal2017before.bib"
+bibliography_journalpress:    "bib/journalpress.bib"
+bibliography_confco:          "bib/conf_coauthor.bib"
+bibliography_notpeer:         "bib/notpeer.bib"
+bibliography_student:         "bib/student.bib"
+bibliography_ebook:           "bib/ebook.bib"
+bibliography_proceedings:     "bib/proceedings.bib"
+bibliography_github_projects: "bib/github.bib"
+given-name-pattern: Sarah E.
+family-name-pattern: Schwartz
+---
+
+```{r setup, include=FALSE, cache = FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo    = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+library(vitae)
+library(tidyverse)
+library(vroom)
+library(readxl)
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Academic Appointment
+
+```{r appointment}
+readxl::read_excel("data/appointment.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:appointment.Rmd-->
+
+
+\vspace{5 mm}
+
+# Certificates
+
+```{r certificate}
+readxl::read_excel("data/certificate.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:certificate.Rmd-->
+
+
+\clearpage
+
+# Education
+
+```{r education}
+readxl::read_excel("data/education.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:education.Rmd-->
+
+
+\vspace{5 mm}
+
+# Awards and Honors
+
+```{r award}
+readxl::read_excel("data/award.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:award.Rmd-->
+
+
+\vspace{7mm}
+
+# Administrative
+
+
+```{r admin}
+readxl::read_excel("data/admin.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:admin.Rmd-->
+
+
+\clearpage
+
+# Software
+
+<!-- ## Data Science Packages in Comprehensive R Archive Network (CRAN) -->
+
+<!-- ```{r R-package, echo = FALSE, cache = FALSE, eval = FALSE}
+knitr::write_bib(c('ezpickr', 'mboxr', 'youtubecaption'), "bib/R_packages.bib")
+#R_package <- suppressMessages(RefManageR::ReadBib("bib/R_packages.bib", check = FALSE))
+#RefManageR:::print.BibEntry(R_package)
+####vitae::bibliography_entries("bib/R_packages.bib")
+``` -->
+
+<!-- ::: {#refs_R_packages} -->
+<!-- ::: -->
+
+
+
+```{r}
+tibble::tribble(
+  ~title,  ~bullet,
+  "R, R Studio, and R Markdown (LaTeX)",
+  "Data cleaning and wrangling, statistical analysis, and reproducible reporting",
+  "SAS, SPSS, MPlus, and G*Power",
+  "Data cleaning and wrangling, and statistical analysis",
+  "REDCap and Qualtrics",
+  "Creating forms and collecting data"
+) %>%  
+  vitae::detailed_entries(
+    what = title,
+    why = bullet
+  )
+```
+
+\vspace{1 cm}
+
+# R Packages on GitHub
+
+<!-- ```{r github, echo = FALSE, cache = FALSE, eval=T}
+#knitr::write_bib(c('tactileR', 'ezviewr', 'jladown', 'edmdown'), "bib/github.bib")
+#github <- suppressMessages(RefManageR::ReadBib("bib/github.bib", check = FALSE))
+#RefManageR:::print.BibEntry(github)
+####vitae::bibliography_entries("bib/github.bib")
+``` -->
+
+<!-- ::: {#refs_github_projects} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/github.bib")
+```
+
+
+<!-- ## Officially Code_Contributing R Packages -->
+
+<!-- * [My GitHub pull requests](https://github.com/pulls?q=is%3Apr+author%3Ajooyoungseo+archived%3Afalse+is%3Aclosed) have been peer-reviewed and merged for active data science R packages: -->
+
+```{r contribute}
+#knitr::write_bib(c('bookdown', 'distill', 'BrailleR', 'wordcountaddin'), "bib/contribute.bib")
+# ezpickr::pick("data/contribute.xlsx") %>%
+#   tidyr::fill(-why) %>%
+#   vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:software_dev.Rmd-->
+
+
+\clearpage
+
+# Continuing Education
+
+
+```{r contined}
+readxl::read_excel("data/contined.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:contined.Rmd-->
+
+
+\clearpage
+
+<!-- # Teaching: Course Evaluations -->
+
+```{r, warning=FALSE, message=FALSE, error=FALSE}
+library(tidyverse)
+library(readxl)
+```
+
+
+
+```{r}
+df_eval <- readxl::read_excel("data/courseeval_vs_database_SS_2024-05-03.xlsx") %>% 
+  janitor::clean_names() %>% 
+  tidyr::separate(col = year_and_semester, 
+                  into = c("year", "sem"),
+                  remove = FALSE) %>% 
+  dplyr::mutate(course = 
+                  case_when(stringr::str_match(course_num, 
+                                               pattern = "STAT 2000") > 0 ~ "STAT 2000",
+                            stringr::str_match(course_num, 
+                                               pattern = "PSY 3010") > 0 ~ "PSY 3010",
+                            stringr::str_match(course_num, 
+                                               pattern = "PSY 6600") > 0 ~ "PSY 6600",
+                            stringr::str_match(course_num, 
+                                               pattern = "PSY 7650") > 0 ~ "PSY 7650")) %>% 
+  dplyr::mutate(num = response_rate*enrolled) %>% 
+  dplyr::mutate(year = as.numeric(year)) %>% 
+  dplyr::mutate(sem = factor(sem, levels = c("Spring", "Summer", "Fall"))) %>% 
+  dplyr::mutate(course = factor(course)) %>% 
+  dplyr::mutate(time = (year - 2014)*3 + as.numeric(sem) - 1) %>% 
+  dplyr::arrange(year, sem) %>% 
+  dplyr::mutate(time = case_when(sem == "Spring" ~ lubridate::ymd(paste(year,  3, 1, sep = "/")),
+                                 sem == "Summer" ~ lubridate::ymd(paste(year,  6, 15, sep = "/")),
+                                 sem == "Fall"   ~ lubridate::ymd(paste(year, 10, 1, sep = "/")))) %>% 
+  dplyr::select(time, year, sem, 
+                course, 
+                rate = response_rate, enrolled, num,
+                progress_on_objectives,
+                excellent_teacher,
+                excellent_course,
+                summary_evaluation)
+```
+
+
+```{r, include=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>% 
+  dplyr::arrange(course, time)
+```
+
+
+```{r, include=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>%
+  ggplot(aes(x = time,
+             y = excellent_teacher,
+             group = course)) +
+  geom_hline(yintercept = c(37, 50, 62),
+             linetype = "dotted") +
+  geom_rect(ymin = 45,
+            ymax = 55,
+            xmin = lubridate::ydm("2015/1/1"),
+            xmax = lubridate::ymd("2024/12/31"),
+            fill = "gray",
+            alpha = .01) +
+  geom_line(aes(linetype = course)) +
+  geom_point(aes(shape = course),
+             size = 3) +
+  theme_bw() +
+  labs(x = NULL,
+       y = "Rating: Excellent Teacher (IDEA Database)",
+       linetype = NULL,
+       shape = NULL) +
+  # scale_linetype_manual(values = c("solid", "longdash")) +
+  theme(legend.position = c(0, 0),
+        legend.justification = c(-.1, -.1),
+        legend.background = element_rect(color = "black"),
+        legend.key.width = unit(2, "cm"))
+```
+
+
+
+```{r, fig.width=6, fig.height=7, eval=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>%
+  tidyr::pivot_longer(cols = c(progress_on_objectives,
+                               excellent_teacher,
+                               excellent_course,
+                               summary_evaluation)) %>% 
+  dplyr::mutate(name = factor(name) %>% 
+                  forcats::fct_recode("Student Progress on Objectives" =
+                                        "progress_on_objectives",
+                                      "Excellent: Teacher" = "excellent_teacher",
+                                      "Excellent: Course" = "excellent_course",
+                                      "Summary" = "summary_evaluation")) %>% 
+  ggplot(aes(x = time,
+             y = value,
+             group = course)) +
+  geom_hline(yintercept = c(37, 50, 62),
+             linetype = "dotted") +
+  geom_rect(ymin = 45,
+            ymax = 55,
+            xmin = lubridate::ydm("2015/1/1"),
+            xmax = lubridate::ymd("2024/12/31"),
+            fill = "gray",
+            alpha = .01) +
+  geom_line(aes(linetype = course)) +
+  geom_point(aes(shape = course),
+             size = 2.5) +
+  theme_bw() +
+  labs(x = NULL,
+       y = "Mean Rating vs. IDEA Database",
+       linetype = NULL,
+       shape = NULL) +
+  scale_linetype_manual(values = c("solid", "longdash")) +
+  theme(legend.position = "bottom",
+        # legend.position = c(0, 0),
+        # legend.justification = c(-.1, -.1),
+        # legend.background = element_rect(color = "black"),
+        legend.key.width = unit(2, "cm")) +
+  facet_wrap(~ name, ncol = 1)
+```
+
+
+
+
+
+```{r, fig.width=6, fig.height=7, eval=FALSE}
+df_eval %>% 
+  dplyr::filter(course %in% c("PSY 6600", "PSY 7650")) %>%
+  tidyr::pivot_longer(cols = c(progress_on_objectives,
+                               excellent_teacher,
+                               excellent_course,
+                               summary_evaluation)) %>% 
+  dplyr::mutate(name = factor(name) %>% 
+                  forcats::fct_recode("Student Progress on Objectives" =
+                                        "progress_on_objectives",
+                                      "Excellent: Teacher" = "excellent_teacher",
+                                      "Excellent: Course" = "excellent_course",
+                                      "Summary" = "summary_evaluation")) %>% 
+  ggplot(aes(x = time,
+             y = value,
+             group = name)) +
+  geom_hline(yintercept = c(37, 50, 62),
+             linetype = "dotted") +
+  geom_rect(ymin = 45,
+            ymax = 55,
+            xmin = lubridate::ydm("2015/1/1"),
+            xmax = lubridate::ymd("2024/12/31"),
+            fill = "gray",
+            alpha = .01) +
+  geom_line(aes(linetype = name)) +
+  geom_point(aes(shape = name),
+             size = 2.5) +
+  theme_bw() +
+  labs(x = NULL,
+       y = "Mean Rating vs. IDEA Database",
+       linetype = NULL,
+       shape = NULL) +
+  # scale_linetype_manual(values = c("solid", "longdash")) +
+  theme(legend.position = "bottom",
+        # legend.position = c(0, 0),
+        # legend.justification = c(-.1, -.1),
+        # legend.background = element_rect(color = "black"),
+        legend.direction = "vertical",
+        legend.key.width = unit(2, "cm")) +
+  facet_wrap(~ course, ncol = 1)
+```
+
+
+# Teaching Experience: Graduate Level
+
+```{r grad-teaching-experience}
+readxl::read_excel("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "grad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\vspace{7 mm}
+
+# Teaching Experience: Undergraduate Level
+
+```{r undergrad-teaching-experience}
+readxl::read_excel("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "undergrad") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\vspace{7 mm}
+
+
+# Teaching Experience: College-wide Workshops
+
+> \textsc{All sessions target the audience of faculty, research staff, adn graduate students in the college.  Starting in the Fall of 2019, the workshops were formalized to all enrollment for continuing education (1 CEU) or standard university credit (0.5 cr), in addition to the pervious a'la cart option.}
+
+
+```{r sessions}
+readxl::read_excel("data/workshops.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+\clearpage
+
+# Talks
+
+
+```{r talks}
+readxl::read_excel("data/talk.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:teaching_exp.Rmd-->
+
+\clearpage
+
+# Grants: Funded
+
+
+
+```{r grant}
+readxl::read_excel("data/grant.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why, 
+                          .protect = FALSE)
+```
+
+\clearpage
+
+# Grants: Recently Submitted
+
+
+```{r grant_submit}
+readxl::read_excel("data/grant_prep.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(stage == "sent") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why, 
+                          .protect = FALSE)
+```
+
+\clearpage
+
+# Grants: Currently Drafting or Revising 
+
+
+```{r grant_revise}
+readxl::read_excel("data/grant_prep.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(stage == "prep") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why, 
+                          .protect = FALSE)
+```
+
+<!--chapter:end:grant.Rmd-->
+
+
+\clearpage
+
+# Publications: Citations
+
+
+\vspace{7mm}
+
+```{r, echo=FALSE, results='hide', message=FALSE, comment=FALSE, warning=FALSE, error=FALSE}
+library(scholar)
+library(tidyverse)
+```
+
+
+
+```{r, fig.width=6, fig.height=3, fig.align='center'}
+scholar::get_citation_history(id = "HMdHkLYAAAAJ") %>% 
+  ggplot(aes(x = factor(year),
+             y = cites)) +
+  geom_rect(aes(xmin = "2013", xmax = "2017", 
+                ymin = -25, ymax = 250),
+            alpha = .02) +
+  annotate(geom = "text",
+           x = "2015",
+           y = 300,
+           label = "Doctoral Program") +
+  geom_col() +
+  theme_bw() +
+  labs(x = "Year",
+       y = "Citations per Year\n(Google Scholar)") 
+```
+
+
+\vspace{7mm}
+
+# Publications: Working Papers under Revision or Review
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journalpress} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journalpress.bib")
+```
+
+\endgroup
+
+
+
+\clearpage
+
+# Publications: Refereed Journal Papers - 2024
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2024} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2024.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+# Publications: Refereed Journal Papers - 2023
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2023} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2023.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+# Publications: Refereed Journal Papers - 2022
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2022} -->
+<!-- ::: -->
+
+
+```{r}
+bibliography_entries("bib/journal2022.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+# Publications: Refereed Journal Papers - 2021
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2021} -->
+<!-- ::: -->
+
+
+```{r}
+bibliography_entries("bib/journal2021.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+# Publications: Refereed Journal Papers - 2020
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2020} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2020.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+# Publications: Refereed Journal Papers - 2019
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2019} -->
+<!-- ::: -->
+
+
+```{r}
+bibliography_entries("bib/journal2019.bib")
+```
+
+\endgroup
+
+
+
+
+\vspace{7mm}
+
+
+# Publications: Refereed Journal Papers - 2018
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2018} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2018.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+
+# Publications: Refereed Journal Papers - 2017 and Prior
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2017} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/journal2017before.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+
+# Publications: Papers in Refereed Conference Proceedings
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_proceedings} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/proceedings.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+# Publications: Conference Presentations, Coauthored
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_confco} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/conf_coauthor.bib")
+```
+
+\endgroup
+
+
+
+\vspace{7mm}
+
+
+# Publications: Work Not Peer Reviewed
+
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_notpeer} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/notpeer.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
+
+
+
+# Publications: Disertation
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+
+<!-- ::: {#refs_student} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/student.bib")
+```
+
+\endgroup
+
+
+
+\vspace{7mm}
+
+
+# Publications: Online eBooks
+
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_ebook} -->
+<!-- ::: -->
+
+```{r}
+bibliography_entries("bib/ebook.bib")
+```
+
+
+\endgroup
+
+<!--chapter:end:publication.Rmd-->
+
+\clearpage
+
+# Directed Student Learning 
+
+
+## **Research Assistants for the Statistical Consulting Studio**
+
+* Liam O'Neil, 2022-2024
+* Demi Culianos, 2020-2021
+* Jeremy Haynes, 2019-2020
+* Ryan Becker, 2019
+* Joseph Jones, 2018-2019
+* Morgan Kawamura, 2018
+* Fred Hints, 2018
+* Andy Craig, 2017-2018
+* Tyson Barrett, 2016-2017
+
+
+\vspace{7 mm}
+
+
+# Current Committees
+
+## **DOCTORAL**
+
+```{r phd_current_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "current",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+\vspace{7 mm}
+
+
+## **MASTERS**
+
+```{r ms_current_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "ms",
+                time == "current",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+    
+\clearpage
+
+# Past Committees
+
+## **CHAIR**
+
+```{r phd_past_chair}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "past",
+                me == "mentor") %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+\vspace{7 mm}
+
+    
+## **DOCTORAL**
+
+```{r phd_past_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "phd",
+                time == "past",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+    
+\vspace{7 mm}
+
+## **MASTERS**
+
+
+```{r ms_past_member}
+readxl::read_excel("data/students.xlsx") %>%
+  tidyr::fill(-why) %>%
+  dplyr::filter(level == "ms",
+                time == "past",
+                me == "member") %>% 
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+
+<!--chapter:end:students.Rmd-->
+
+
+\vspace{7 mm}
+
+# Current Memberships
+
+  * American Statistical Association (ASA)
+
+\vspace{7 mm}
+
+<!--chapter:end:membership.Rmd-->
+
+
+
+# Service
+
+```{r service}
+readxl::read_excel("data/service.xlsx") %>%
+  tidyr::fill(-where
+) %>%
+  dplyr::arrange(desc(order)) %>% 
+  vitae::detailed_entries(what, when, with, where)
+```
+
+
+
+<!--chapter:end:service.Rmd-->
+
+# Notes
+
+* This CV is reproducible; all the source code behind this CV is available on [this GitHub repo](https://github.com/sarbearschwartz/jy_CV){target="_blank"}.
+
+<!-- ![JooYoung Seo's Signature](data/signature.png)\ -->
+
+<!--chapter:end:backmatter.Rmd-->
+

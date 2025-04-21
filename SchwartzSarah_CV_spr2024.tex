@@ -1,0 +1,1830 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 8 February 2019
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{414141}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,footskip=60pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+\usepackage{xurl}
+
+% personal data
+\name{Sarah E}{Schwartz}
+\title{Research Assistant Professor}
+\address{Utah State University}{}{}
+
+\phone[mobile]{(435) 797 - 0169} % Phone number
+\email{\donothing{\href{mailto:Sarah.Schwartz@usu.edu}{\nolinkurl{Sarah.Schwartz@usu.edu}}}}
+\homepage{www.SarahSchwartzStats.com} % Personal website
+\social[linkedin]{SarBearSchwartz}
+
+\social[github]{SarBearSchwartz}
+
+
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+
+
+\quote{I am a statistician with a passion for facilitating research that
+is appropriate, transparent, and reproducible.}
+
+% Pandoc CSL macros
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+\section{Academic Appointment}\label{academic-appointment}
+
+\nopagebreak
+    \cventry{2015-present}{Assistant Research Professor}{Psychology Department, College of Education and Human Services}{Utah State University}{}{\begin{itemize}%
+\item Director, The Statistical Consulting Studio%
+\item Instructor, graduate student quantitatice methods and statistics courses%
+\end{itemize}}
+    \cventry{2013-2015}{Statistician}{Office of Research Services, College of Education and Human Services}{Utah State University}{}{\begin{itemize}%
+\item Acting Director, Office of Methodological and Data Sciences%
+\item Instructor, graduate student quantitatice methods and statistics courses%
+\end{itemize}}
+    \cventry{2005-2013}{Statistician and Data Manager}{Center for Epidemiology}{Utah State University}{}{\begin{itemize}%
+\item Managed databases, clean data, and prepare custom datasets%
+\item Performed statistical analyses and prepared publications, posters, presentations,
+and grant submissions%
+\item Worked under three main grants and many co-investigators: University of Utah,
+  BYU, Duke, John Hopkins, University of Maryland, ect.%
+\end{itemize}}
+    \cventry{2012}{Data Manager}{Kenoi Genetics Lab}{Brigham Young University}{}{\begin{itemize}%
+\item Managed databases and prepare custom datasets%
+\end{itemize}}
+    \cventry{2006-2008}{Adjunct Lecturer}{Mathematics and Statistics Department}{Utah State University}{}{\begin{itemize}%
+\item Traditional, evening, and distance courses%
+\end{itemize}}
+    \cventry{2000-2004}{High School Teacher, Math and Science}{Mathematics and Statistics Department}{Utah State University}{}{\begin{itemize}%
+\item Sky View High School, Smithfield, Utah%
+\item Logan River Academy, Logan, Utah%
+\end{itemize}}
+
+\vspace{5 mm}
+
+\section{Certificates}\label{certificates}
+
+\nopagebreak
+    \cventry{2001-2009}{Teaching License}{Secondary Education}{State of Utah}{}{\begin{itemize}%
+\item Endorsements: mathematics level 4 and chemistry%
+\end{itemize}}
+
+\clearpage
+
+\section{Education}\label{education}
+
+\nopagebreak
+    \cventry{2013-2017}{PhD: Mathetatics, Specialization in Statistics}{Utah State University}{Logan, Utah, USA}{}{\begin{itemize}%
+\item TA: Lecturer and grader%
+\item RA: Simulation programmer, Cytel Software Inc.%
+\end{itemize}}
+    \cventry{2004-2006}{MS: Statistics}{Utah State University}{Logan, Utah, USA}{}{\begin{itemize}%
+\item Mentor: Dr. Chris Corcoran%
+\item TA: Lecturer and grader%
+\item RA: Statistician, Center for Epidemiology Studies%
+\end{itemize}}
+    \cventry{1998-2000}{BS: Math and Chem Secondary Education}{Utah State University}{Logan, Utah, USA}{}{\begin{itemize}%
+\item Student Teaching: Sky View High School, Smithfield, Utah%
+\end{itemize}}
+
+\vspace{5 mm}
+
+\section{Awards and Honors}\label{awards-and-honors}
+
+\nopagebreak
+    \cventry{2015}{Department Academic Excellence Award}{Mathematics and Statistics Department}{Utah State University}{}{\empty}
+    \cventry{2014}{Department Industrious Graduate Student Award}{Mathematics and Statistics Department}{Utah State University}{}{\empty}
+    \cventry{2005}{Department Graduate Student Teacher of the Year Award}{Mathematics and Statistics Department}{Utah State University}{}{\empty}
+
+\vspace{7mm}
+
+\section{Administrative}\label{administrative}
+
+\nopagebreak
+    \cventry{2018-present}{CEHS Office of Research}{EDUC 6600 Pre-Test Coordinator}{Utah State University}{}{\begin{itemize}%
+\item Update pre-test question bank%
+\item Moderate Student communication and answer questions.%
+\item Setup remote test taking with advent of Covid-19 shift to online.%
+\item Create and monitor refresher materials for test-prep%
+\item Monitor suspisous behavior and check for cheating%
+\item Interface with all CEHS departments on the expectations and timeline.%
+\end{itemize}}
+
+\clearpage
+
+\section{Software}\label{software}
+
+\nopagebreak
+    \cventry{}{R, R Studio, and R Markdown (LaTeX)}{}{}{}{\begin{itemize}%
+\item Data cleaning and wrangling, statistical analysis, and reproducible reporting%
+\end{itemize}}
+    \cventry{}{SAS, SPSS, MPlus, and G*Power}{}{}{}{\begin{itemize}%
+\item Data cleaning and wrangling, and statistical analysis%
+\end{itemize}}
+    \cventry{}{REDCap and Qualtrics}{}{}{}{\begin{itemize}%
+\item Creating forms and collecting data%
+\end{itemize}}
+
+\vspace{1 cm}
+
+\section{R Packages on GitHub}\label{r-packages-on-github}
+
+\phantomsection\label{refs-308572642dc97cd9783e85f3c92541cd}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-R-apaSupp}
+1. \textbf{Schwartz, S. E.} (2024). \emph{apaSupp: Prepare supplemental
+material documents for publications}.
+\url{https://github.com/sarbearschwartz/apaSupp}. \emph{R package
+version 0.0.0.9000}.
+
+\bibitem[\citeproctext]{ref-R-dissertateUSU}
+2. Barrett, T. S., \& \textbf{Schwartz, S. E.} (2021).
+\emph{dissertateUSU: Materials for writing a dissertation at utah state
+university in r markdown}.
+\url{https://github.com/TysonStanley/dissertateUSU}. \emph{R package
+version 0.3.0}.
+
+\bibitem[\citeproctext]{ref-R-texreghelpr}
+3. \textbf{Schwartz, S. E.} (2021). \emph{Texreghelpr: Extract
+generalized regression output for use in 'texreg` tables}.
+\url{https://github.com/sarbearschwartz/texreghelpr}. \emph{R package
+version 0.1.0}.
+
+\end{CSLReferences}
+
+\clearpage
+
+\section{Continuing Education}\label{continuing-education}
+
+\nopagebreak
+    \cventry{Summer 2016}{Structural Equation Modeling in Longitudinal Research}{APA Advanced Training Institutes (ATIs)}{Arizonal State University}{}{\begin{itemize}%
+\item This ATI is designed to highlight recent methodological advances in the analysis of longitudinal psychological data using structural equation modeling (SEM).%
+\item The workshop covers a range of topics, including growth models, factorial invariance, incomplete data, ordinal outcomes, and latent change score models.%
+\item Instructors: Dr. Craig Enders , Department of Psychology at The University of California, Los Angeles, Dr. Kevin J. Grimm of the Department of Psychology at Arizona State University, and Dr. Nilam Ram of the Departments of Psychology and Communications at Stanford University.%
+\end{itemize}}
+    \cventry{Fall Semester 2019}{PSY 7810: Structural Equation Modeling}{Audit granduate course}{Utah State University}{}{\begin{itemize}%
+\item Objective 1) understanding the motivation, logic, and inner workings of SEM%
+\item Objective 2) be able to specify models and fit them to data using conventional statistical software%
+\item Objective 3)  have the ability to interpret and report results in a manner consistent with the standards of peer-reviewed journals%
+\item Instructor: Dr. Sarfraz Serang%
+\end{itemize}}
+    \cventry{August 17, 2021}{The Probability Problem: Building Probability Skills in Intro Statistics}{Workshop/Seminar}{Hawkes Learning}{}{\begin{itemize}%
+\item Focus: struggles that undergraduate students (non-STEM majors) tend to face with probability in their introductory statistics course.%
+\item Instructional principle implemented:  worked-out problems including writing prompts to encourage self-explanation of students’ thinking through studying the worked-out examples%
+\item Instructor: KimberLeigh Hadfield, Senior Lecturer USU Math and Statistics Department%
+\end{itemize}}
+    \cventry{October 26, 2021}{A New Normal in Inclusive, Usable Online Learning Experiences}{Workshop/Seminar}{Utah State University}{}{\begin{itemize}%
+\item Office of Empowering Teaching Excellence (ETE)%
+\item Thurston, T. N., Lundstrom, K., González, C., Stommel, J., Masland, L. C., Buyserie, B., ... \& Eason, A. (2021). Resilient Pedagogy: Practical Teaching Strategies to Overcome Distance, Disruption, and Distraction.%
+\item Presenters/authors: Christopher Phillips and Jared Colton%
+\end{itemize}}
+
+\clearpage
+
+\section{Teaching Experience: Graduate
+Level}\label{teaching-experience-graduate-level}
+
+\nopagebreak
+    \cventry{Fall: 2016-present}{Psychology Department}{PSY 7650: Multilevel and Marginal Models}{Utah State University}{}{\begin{itemize}%
+\item Coverage of multilevel (ie, mixed-effects, hierarchical linear) and marginal (ie, GEE) models for both continuous and categorical outcomes.%
+\item Includes application of these methods to many types of cross-sectional and longitudinal research designs (eg, experimental, case-control, cohort, cross-over, complex sample, randomized controlled trials).%
+\item Software: R and R Studio%
+\item Online eBook: all class examples with code and explainations%
+\item Youtube: Pre-recorded lectures for course when Covid-19 induced a shift to online, asynchronous learing%
+\end{itemize}}
+    \cventry{Spring/Sum 2015-present}{CEHS: Office of Research Services}{EDUC 6600:  Statistical Foundataions (previously: Research Design and Analysis I)}{Utah State University}{}{\begin{itemize}%
+\item Research design and statistical concepts for research in education, human services, and psychology, with emphasis on the selection and interpretation of statistical analyses.%
+\item Focus on inference and ANOVA based methods. Includes a combination of traditional face-to-face and distance-site students.%
+\item Software: R and R Studio starting in 2018, SPSS prior%
+\item Online eBook: all class examples with code and explainations%
+\item Assignments online through Atomic Assessment within Canvas%
+\item Youtube: Pre-recorded lectures for course when Covid-19 induced a shift to online, asynchronous learing%
+\end{itemize}}
+
+\vspace{7 mm}
+
+\section{Teaching Experience: Undergraduate
+Level}\label{teaching-experience-undergraduate-level}
+
+\nopagebreak
+    \cventry{Spring 2022}{Psychology Department}{PSY 3010: Psycological Statistics}{Utah State University}{}{\begin{itemize}%
+\item Descriptive and inferential statistical methods.%
+\item Focus on behavior statistics and statistical applications.%
+\end{itemize}}
+    \cventry{Spring/Fall: 2005, 2014}{Mathematics and Statistics Department}{STAT 2000: Statistical Methods}{Utah State University}{}{\begin{itemize}%
+\item Introduction to statistical concepts, graphical techniques, probability, distributions, estimation, one and two sample testing, chi-square tests, and simple linear regression, one-way ANOVA.%
+\item Software: StatCrunch%
+\end{itemize}}
+    \cventry{2008 Spring, 2007 Spring/Fall, 2006 Fall}{Mathematics and Statistics Department}{STAT 1040: Introduction to Statistics}{Utah State University}{}{\begin{itemize}%
+\item Descriptive and inferential statistical methods.%
+\item Emphasis on conceptual understanding and statistical thinking.%
+\item Examples presented from many different areas.%
+\item Software: none%
+\end{itemize}}
+    \cventry{Fall 2004}{Mathematics and Statistics Department}{MATH 1050: College Algebra}{Utah State University}{}{\begin{itemize}%
+\item Functions: graphs, transformations, combinations, and inverses.%
+\item Polynomial, rational, exponential, logarithmic functions, and applications.%
+\item Systems of equations and matrices. Partial fractions.%
+\item Software: graphing calculators%
+\end{itemize}}
+    \cventry{Summer 2006}{Mathematics and Statistics Department}{MATH 1010: Intermediate Algebra}{Utah State University}{}{\begin{itemize}%
+\item Review of introductory algebra concepts.%
+\item Topics include manipulating and simplifying expressions, solving equations and inequalities, graphing equations, and inequalities.%
+\item Real world applications including linear, quadratic, polynomial, rational, exponential, and radical functions.%
+\item Software: none%
+\end{itemize}}
+
+\vspace{7 mm}
+
+\section{Teaching Experience: College-wide
+Workshops}\label{teaching-experience-college-wide-workshops}
+
+\begin{quote}
+\textsc{All sessions target the audience of faculty, research staff, adn graduate students in the college.  Starting in the Fall of 2019, the workshops were formalized to all enrollment for continuing education (1 CEU) or standard university credit (0.5 cr), in addition to the pervious a'la cart option.}
+\end{quote}
+
+\nopagebreak
+    \cventry{Spring 2022}{Time-to-Event Analysis, aka Survival Analysis}{Seven 1-hour sessions}{Utah State University}{}{\begin{itemize}%
+\item Inferior Models: You must make a choice - censoring and duration of follow-up%
+\item Non-parametric approach: Kaplan Meyer Plots with Log Rank Test (bivariate)%
+\item Semi-parametric approach: Cox Proportional-Hazards Regression (multivariate)%
+\item Extension: Time varying covariates in a Cox model%
+\end{itemize}}
+    \cventry{Fall 2021}{Categorical Data Analysis}{Seven 1-hour sessions}{Utah State University}{}{\begin{itemize}%
+\item Exact, permutation/bootstrap, and parametric methods%
+\item GLM: Binary logistic regression%
+\item GLM: Count outcomes: poisson regression, overdispersion, and negative binomial regression%
+\item GLM: Zero inflated models (ZIP and ZINB)%
+\end{itemize}}
+    \cventry{Spring 2021}{Missing Data and Multiple Imputations}{Seven 1-hour sessions}{Utah State University}{}{\begin{itemize}%
+\item Missing Data Mechanisms, Implications and Testing%
+\item Historical Methos and Reporting Missing Data%
+\item Multiple Imputations: basic and advanced topics%
+\end{itemize}}
+    \cventry{Fall 2020}{Extensions to Regression}{Seven 1-hour sessions}{Utah State University}{}{\begin{itemize}%
+\item Multiple Linear Regression Refresher%
+\item Powerful Publishable Plots: The Grammer of Graphics%
+\item Time-to-Event Modeling: Survival Analysis%
+\item Intro to Multileel and Marginal Modles: MLM, HLM, GEE%
+\end{itemize}}
+    \cventry{Spring 2020}{Common Design Issues}{Seven 1-hour sessions}{Utah State University}{}{\begin{itemize}%
+\item Effect Size and Power Analysis uisng G*Power and R%
+\item Propensity Score Matching and Alternatives%
+\item Missing Data and Multiple Imputations%
+\end{itemize}}
+    \cventry{Fall 2019}{Extensions to Regressio}{Seven 1-hour sessions}{Utah State University}{}{\begin{itemize}%
+\item Review of Regression (MLR and GLM), including creating tables and figures for publication%
+\item Time-to-event/Survival Analysis: including KM plots with Log-Rank test (bivariate), Cox-PH\_Regression (multivariate)%
+\item Regularized Regression (Ridge and LASSO)%
+\item Intro to Multileel and Marginal Modles: MLM, HLM, GEE%
+\end{itemize}}
+    \cventry{2015-2020}{Quantitative Methods: Stand-along Sessions}{Two-three hour workshop}{Utah State University}{}{\begin{itemize}%
+\item Effect Size and Power Analysis uisng G*Power (fall 2015, fall 2017, fall 2018)%
+\item Exact Methods for Categorical Data in SPSS, R, and StatXact (spring 2018)%
+\item Exploring your Data with ggplot in R (spring 2016)%
+\item GEE: General Estimating Equations (spring 2017)%
+\item Intro to Multilevel and Marginal Modles: MLM, HLM, GEE  (spring 2018, spring 2019)%
+\item Intro to R and Rstudio for Absolute Beginners (fall 2015)%
+\item Intro to R: The Tidyverse (fall 2016)%
+\item Logistic Regression (fall 2017)%
+\item Missing Data and Multiple Imputations (fall 2018)%
+\item Multiple Linear Regression Refresher in SPSS and R (spring 2018)%
+\item Powerful Publishable Plots: The Grammer of Graphics (spring 2016, fall 2018)%
+\item Random Forests: Classificantion and Regression Trees (spring and fall 2017, spring 2019)%
+\item Reproducible Workflow: Intor to SPSS via syntax (spring 2018)%
+\item Time-to-Event Modeling: Survival Analysis with SPSS and R (spring 2018, spring 2019)%
+\end{itemize}}
+
+\clearpage
+
+\section{Talks}\label{talks}
+
+\nopagebreak
+    \cventry{Feb 2024}{Food for Thought Speaker Series}{Instructional Technology and Learning Sciences Department}{USU -  College of Education and Human Services}{}{\begin{itemize}%
+\item Invited by: Hillary Swanson%
+\item Topic: USU-CEHS quantitatie methods course offerings and the CARMA certificate%
+\end{itemize}}
+    \cventry{April 2022}{Internal Training}{Institutional Review Board}{Utah State University}{}{\begin{itemize}%
+\item Invited by:%
+\item Topic: Power and Sample Size Considerations in Human Subjects Research%
+\end{itemize}}
+    \cventry{April 2021}{Guest lecturer: HDFS 7200: Meta Analysis}{Human Development and Family Studies Department}{USU -  College of Education and Human Services}{}{\begin{itemize}%
+\item Invited by Dr. Diana Meter, instructor of the course%
+\item Topic: Meta-analysis for single subject design studies%
+\end{itemize}}
+    \cventry{Sept 2020}{Brown Bag Series: Meta-analysis}{Office of Research Services}{USU -  College of Education and Human Services}{}{\begin{itemize}%
+\item Invited by Dr. Shawn Whiteman, CEHS Associate Dean for Research%
+\item Topic: Meta-analysis for single subject design studies%
+\end{itemize}}
+    \cventry{Nov 2019}{Guest preseter, College-wide Seminar}{Office of Research Seminar}{USU - College of Agriculture and Applied Sciences}{}{\begin{itemize}%
+\item Invited by Dr. Abby Benninghoff to present to all college faculty.%
+\item Topic:  Powerful Publishable Plots, Best strategies for data visualization%
+\item Also covered: Creating plots that reveal your data and communicate complex ideas with clarity and precision.%
+\end{itemize}}
+    \cventry{Jan 2019}{Seminar: Data Analytics Student Seminar Series}{Math and Stat Department}{USU - College of Science}{}{\begin{itemize}%
+\item Invited by the chapter perseident to present to the student group.%
+\item Topic:  What should I “git”?  Getting started with Git and GitHub%
+\item Also covered using the GitKracken interface for version control and collaborative research.%
+\end{itemize}}
+
+\clearpage
+
+\section{Grants: Funded}\label{grants-funded}
+
+\nopagebreak
+    \cventry{2025-2029}{NIH: U01}{Alzheimer's Disease in Native Hawaiians and Pacific Islanders: Sample Acquisition and Whole Genome Sequencing}{Sub-award to BYU, lead: Perry Ridge}{}{\begin{itemize}%
+\item PI: JoAnn Tschanz%
+\item Roll: statistician%
+\item Amount: \$2,641,126%
+\end{itemize}}
+    \cventry{2024-2028}{NIH: R01}{Treating Complex Syntax in Children with DLD}{Partnership with Ohio University and University of Arizona}{}{\begin{itemize}%
+\item PI: Ron Gillam%
+\item Roll: statistician%
+\item Amount \$2,500,000 (\$1,266,865 USU)%
+\end{itemize}}
+    \cventry{2023-2024}{USU: ADRC}{Cataloguing Cache County memory study Biological Samples}{Alzheimer's and Dementia Research Center}{}{\begin{itemize}%
+\item PI: JoAnn Tschanz%
+\item Roll: statistician%
+\item Amount: \$62,184%
+\end{itemize}}
+    \cventry{2022-2023}{USU: Research Catalyst}{Predicting the Transition from Acute to a Chronic, Debilitating Tinnitus}{Internal Seed Grant}{}{\begin{itemize}%
+\item PI: Maria Kleinstaeuber%
+\item co-PI Karen Munoz, Karl White%
+\item Roll: support%
+\end{itemize}}
+    \cventry{2019 - 2022}{NSF: STEM}{Research on the Development of An Assessment to Measure Kindergarten Children's Abilities to Reason Computationally With Mathematical Problem-Solving Skills}{Program: STEM + Computing (STEM+C) Part}{}{\begin{itemize}%
+\item PI: Jody Clarke Midura%
+\item Co-PI: Victor Raymond Lee, Jessica Shumway%
+\item Amount: \$1,120,807%
+\end{itemize}}
+    \cventry{2008 - 2011}{NIH: R01}{Lifespan Stressors and Alzheimer’s Disease: The Cache County Study.}{Extended multiple times - DUNS ID: 072983455 (original)}{}{\begin{itemize}%
+\item PIs: Maria Norton, Joann Tschanz%
+\item Roll: data management and analysis%
+\item Amount:  \$970,549 (original)%
+\end{itemize}}
+    \cventry{2002 - 2013}{NIH: R01}{Progression of Dementia, A Population Study.}{Extended multiple times - DUNS ID: 072983455 (original)}{}{\begin{itemize}%
+\item PIs: Joann Tschanz, Constantine G. Lyketsos%
+\item Roll: data management and analysis%
+\item Amount: \$2,787,792 (original)%
+\end{itemize}}
+    \cventry{2000 - 2005}{NIH: R01}{Cache County Family-based Cohort Study on Aging.}{Extended multiple times}{}{\begin{itemize}%
+\item PIs: John Breitner, Kathy Welch-Bohmer%
+\item Roll: data management and analysis%
+\item Amount \$1,999,400(original)%
+\end{itemize}}
+
+\clearpage
+
+\section{Grants: Recently Submitted}\label{grants-recently-submitted}
+
+\nopagebreak
+    \cventry{October 2024}{NIH: R21}{Developing a Tool to Measure Behavior Intervention Complexity}{New submission}{}{\begin{itemize}%
+\item PI: Katie Brown%
+\item Roll: co-investigator%
+\item Amount: \$274,999 (2 years)%
+\end{itemize}}
+    \cventry{October 2024}{NIH: R01}{Efficacy of the ‘Level-Up’ Classroom Design Intervention for Physical Activity Promotion in Preschool-Aged Children}{New submission}{}{\begin{itemize}%
+\item PI: Kim Clevenger%
+\item Co-Is: Keith Christensen, Sarah Schwartz, Karin Pfeiffer, Tyler Prochnmow%
+\item Roll: co-investigator%
+\item Amount: \$2,317,584 (5 years)%
+\end{itemize}}
+    \cventry{July 2024}{NIH: R21}{Feasibility of Kundalini yoga in managing the cognitive decline in long-term care residents with mild cognitive impairment}{New submission}{}{\begin{itemize}%
+\item PI: Kollol Bhattacharyya%
+\item co-I: JoAnn Tschanz%
+\item Roll: statistician%
+\end{itemize}}
+    \cventry{July 2024}{NIH: R21}{Aquatic Exercise for Improving Gait and Cognition in Older Adults}{New submission}{}{\begin{itemize}%
+\item PI: Talin Louder%
+\item co-Is: Chris Dakin, Shannon Pynn%
+\item Roll: statistician%
+\end{itemize}}
+    \cventry{July 2024}{NIH: R01}{Response Inhibition in Reactive Balance Control}{Resubmission, multiple iterations and submissions}{}{\begin{itemize}%
+\item PI: Dave Bolton%
+\item co-PIs: JoAnn Tschanz, Chris Warren%
+\item Roll: co-investigator%
+\item Amount \$2,445,008 (4 years)%
+\end{itemize}}
+    \cventry{July 2023}{NIH R21}{Pavlovian Approaches to Promoting Self-control}{Resubmission (original was prior to my involvment)}{}{\begin{itemize}%
+\item PI: Greg Madden%
+\item Roll: statistician%
+\item Amount \$393,284%
+\end{itemize}}
+
+\clearpage
+
+\section{Grants: Currently Drafting or
+Revising}\label{grants-currently-drafting-or-revising}
+
+\nopagebreak
+    \cventry{June 2024}{NIH R03}{Toward a better understanding of medically unexplained chronic fatigue in older adults: A multiple observations and measurements pilot study}{Original submissions: June 2023, Jun 2024}{}{\begin{itemize}%
+\item PI: Brennan Thompson%
+\item co-Is: Dave Bolton, Kim Clevenger%
+\item Roll: statistician%
+\item Amount \$146,000%
+\item Currently preparing resubmission%
+\end{itemize}}
+    \cventry{Feb 2025}{NIH: R21}{Parental Microprotections in Black Families:  Examining Links Among Racial Discrimination, Parenting, and Adolescent Psychosocial Adjustment}{Original submissions: June 2023, March 2024}{}{\begin{itemize}%
+\item PI: Aryn Dotterer%
+\item co-I: Olivenne Skinner%
+\item Roll: statistician%
+\item Amount: \$412,783%
+\item Currently preparing resubmission%
+\end{itemize}}
+    \cventry{Feb 2025}{NIH: R01}{Age-Related Decline in Markers of Norepinephrine Activity and Increased Risk of Falls in Older Adults}{Original submissions: March 2023, Feb 2024}{}{\begin{itemize}%
+\item PI: Chris Warren%
+\item co-PI's: Dave Bolton, JoAnn Tschanz%
+\item Roll: statistician%
+\item Amount: \$2,200,000%
+\item Currently preparing resubmission%
+\end{itemize}}
+
+\clearpage
+
+\section{Publications: Citations}\label{publications-citations}
+
+\vspace{7mm}
+
+\begin{center}\includegraphics{SchwartzSarah_CV_spr2024_files/figure-latex/unnamed-chunk-10-1} \end{center}
+
+\vspace{7mm}
+
+\section{Publications: Working Papers under Revision or
+Review}\label{publications-working-papers-under-revision-or-review}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-824180ec953ff2c88ddbd95feadd10f1}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Haverkamp2025app}
+1. Haverkamp, C. R., Golson, M., McClain, M. B., \&
+\textbf{Schwartz, S.} (2025). An app-based early academic skills
+intervention for children with autism. \emph{Psychology in the
+Schools.}, \emph{Under Review: 1-23-2025}, Manuscript ID:
+PITS-2025-0107.
+
+\bibitem[\citeproctext]{ref-woolley2025act}
+2. Woolley, M., \textbf{Schwartz, S. E.,} Morrison, K. L., \& Twohig, M.
+P. (2025). Dissemination trial of provider training of ACT-enhanced
+behavior therapy (a-EBT) for trichotillomania: A waitlist controlled
+study. \emph{Behavior Therapy}, \emph{Under Review: 10-7-2024},
+Manuscript ID: BT-S-24-00276R2.
+
+\bibitem[\citeproctext]{ref-Benallie2024exectfun}
+3. Benallie, K. J., McClain, M. B., \textbf{Schwartz, S.}, Davis, G., \&
+Lopez, A. (2024). The impact of autism and ADHD symptomology and
+cognitive functioning on executive functioning in autistic children.
+\emph{Journal of Child Psychology and Psychiatry}, \emph{Under Review:
+11-25-2024}, Manuscript ID: JCPP-OAR-2024-01027.
+
+\bibitem[\citeproctext]{ref-golson2024bias}
+4. Golson, M., Bera, J., Kim, J., Williams, S., Brunson McClain, M.,
+\textbf{Schwartz, S. E.,} Harris, B., \& Sullivan, A. (2024). Racial and
+gender bias in school psychologists' special education classification
+considerations. \emph{Remedial and Special Education}, \emph{Under
+Review: 7-22-2024}, Manuscript ID: RASE-24-03-0060.R1.
+
+\bibitem[\citeproctext]{ref-Golson2024gender}
+5. Golson, M., McClain, M. B., \textbf{Schwartz, S.}, Harris, B., \&
+Gabrielsen, T. (2024). Measuring autism symptomology in boys and girls:
+Investigating measurement invariance of the autism spectrum rating
+scales across gender. \emph{Psychology in the Schools}, \emph{Under
+Review: 10-23-2024}, Manuscript ID: PITS-2024-1290.
+
+\bibitem[\citeproctext]{ref-Golson2024stigma}
+6. Golson, M., McClain, M. B., \textbf{Schwartz, S.}, \& Shahidullah, J.
+(2024). The roles of ADHD knowledge and stigma in predicting parent
+attitudes toward intervention. \emph{Journal of Pediatric Psychology},
+\emph{Under Review: 10-23-224}, Manuscript ID: JPEPSY-2024-0258.
+
+\bibitem[\citeproctext]{ref-golson2024parent}
+7. Golson, M., McClain, M., \textbf{Schwartz, S.}, \& Shahidullah, J.
+(2024). The roles of ADHD knowledge and stigma in predicting parent
+attitudes toward intervention. \emph{Journal of Attention Disorders},
+\emph{Under Review: 10-16-2024}, Manuscript ID: JAD-24-10-494.
+
+\bibitem[\citeproctext]{ref-Gonzalez2024sleep}
+8. Gonzalez, H., \textbf{Schwartz, S.}, Rattinger, G., Wengreen, H.,
+Liu, Y., Buhusi, M., \& Tschanz, J. (2024). Sex differences in
+gene-lifestype interactions and sleep distrubance in the cache county
+study on memory and aging. \emph{SLEEP}, \emph{Under Review: 11-1-2024},
+Manuscript ID: SLEEP-2024-1028.
+
+\bibitem[\citeproctext]{ref-omisakin2024bmi}
+9. Omisakin, O. A., Park, H., \textbf{Schwartz, S. E.,} Noll, J. G.,
+Buxton, O. M., Lim, S., \& Reither, E. N. (2024). Body mass trajectories
+from adolescence to adulthood in the united states: Effects of racial
+identification and adverse childhood experiences. \emph{Journal of
+Research on Adolescence}, \emph{Under Review: 9-29-2024}, Manuscript ID:
+2024--144.R1.
+
+\bibitem[\citeproctext]{ref-Snowden2024oxytocin}
+10. Snowden, A., Freeman, S. M., \textbf{Schwartz, S. E.,} Smith, A. L.,
+\& Goodman, M. M. (2024). Oxytocin and vasopressin 1a receptor
+alterations in the superior temporal sulcus and hypothalamus in
+schizophrenia corresponding. \emph{Psychoneuroendocrinology},
+\emph{Under Review: 8-25-2024}, Manuscript ID: PNEC-D-24-00417.
+
+\bibitem[\citeproctext]{ref-Swanson2024pattern}
+11. Swanson, H., \& \textbf{Schwartz, S. E.} (2024). Students'
+development of pattern conceptions and meta-theoretic competence through
+iterative cycles of the patterns game. \emph{Science Education},
+\emph{Under Review: 5-6-2024}, Manuscript ID: SciEd-00239-2024.
+
+\end{CSLReferences}
+
+\endgroup
+
+\clearpage
+
+\section{Publications: Refereed Journal Papers -
+2024}\label{publications-refereed-journal-papers---2024}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-81d071629b6d69ed69daeb6602c923ea}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-bhattacharyya2024protective}
+1. Bhattacharyya, K. K., Gupta, D. D., \textbf{Schwartz, S.}, Molinari,
+V., \& Fauth, E. B. (2024). Protective roles of meditation practice and
+self-esteem on cognitive functions over time: Findings from the midlife
+in the united states study. \emph{Psychogeriatrics}, \emph{24}(1),
+94--107.
+
+\bibitem[\citeproctext]{ref-dotterer2024parental}
+2. Dotterer, A. M., Ferguson, M., \textbf{Schwartz, S.}, \& James, A. G.
+(2024). Parental microprotections: Testing measurement equivalence in
+black, latinx, and white families. \emph{Family Relations},
+\emph{73}(1), 578--594.
+
+\bibitem[\citeproctext]{ref-mcclain2024measure}
+3. McClain, M. B., \textbf{Schwartz, S. E.,} Kieffer, K. E., Azad, G.,
+\& Shahidullah, J. D. (2024). A measure of attitudes toward
+interdisciplinary healthcare teams around pediatric autism care.
+\emph{Health, Interprofessional Practice and Education}, \emph{6}(1),
+1--9. \url{https://doi.org/10.61406/hipe.281}
+
+\bibitem[\citeproctext]{ref-mcclain2024reading}
+4. McClain, M. B., Yoho, S. E., Drill, R. B., Haverkamp, C. R.,
+\textbf{Schwartz, S. E.,} Barker, B. A., Longhurst, D. N., \& Upton, S.
+R. (2024). Reading skills and background noise in autistic and
+non-autistic children: A pilot study. \emph{Contemporary School
+Psychology}, \emph{28}(3), 283--295.
+
+\bibitem[\citeproctext]{ref-snowden2024oxtyocin}
+5. Snowden, A. W., \textbf{Schwartz, S. E.,} Smith, A. L., Goodman, M.
+M., \& Freeman, S. M. (2024). Oxtyocin and vasopressin 1a receptor
+alterations in the superior temporal sulcus and hypothalamus in
+schizophrenia. \emph{bioRxiv}, 2024--2008.
+
+\bibitem[\citeproctext]{ref-woolley2024thought}
+6. Woolley, M. G., \textbf{Schwartz, S. E.,} Knudsen, F. M.,
+Lensegrav-Benson, T., Quakenbush-Roberts, B., \& Twohig, M. P. (2024).
+Thought-shape fusion in residential eating disorder treatment: Cognitive
+defusion as a mediator between thought-action fusion and treatment
+outcome. \emph{Eating Behaviors}, \emph{54}, 101909.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Refereed Journal Papers -
+2023}\label{publications-refereed-journal-papers---2023}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-f543890390c5a2fcbbd5b6f354699d24}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-ferguson2023parental}
+1. Ferguson, M. M., Dotterer, A. M., \textbf{Schwartz, S. E.,} \&
+Bradford, K. (2023). Parental sexual communication self-efficacy with
+toddlers and young children: An active learning intervention. \emph{Sex
+Education}, \emph{23}(1), 128--146.
+
+\bibitem[\citeproctext]{ref-KLIMCZAK202313}
+2. Klimczak, K. S., \textbf{Schwartz, S. E.,} Donahue, M. L., Capel, L.
+K., Snow, J. L., \& Levin, M. E. (2023). Disentangling trait and state
+psychological inflexibility: A longitudinal multilevel approach.
+\emph{Journal of Contextual Behavioral Science}, \emph{29}, 13--22.
+\url{https://doi.org/10.1016/j.jcbs.2023.05.006}
+
+\bibitem[\citeproctext]{ref-matyi2023brain}
+3. Matyi, J., Drewel, M., \textbf{Schwartz, S.}, Rattinger, G. B.,
+Gonzalez Jr, H. L., DeBerard, S., Buhusi, M., Lyketsos, C. G., \&
+Tschanz, J. T. (2023). Brain-derived neurotrophic factor genes are
+associated with neuropsychiatric symptom progression in dementia. The
+cache county dementia progression study. \emph{Alzheimer's \& Dementia},
+\emph{19}, e063220.
+
+\bibitem[\citeproctext]{ref-mcclain2023caregiver}
+4. McClain, M. B., Golson, M. E., Haverkamp, C. R., Harris, B., Ficklin,
+E., \textbf{Schwartz, S. E.,} \& Wynn, C. J. (2023). Caregiver
+perceptions of social communication and interaction: Development and
+validation of the SCIPS. \emph{Journal of Autism and Developmental
+Disorders}, 1--8.
+
+\bibitem[\citeproctext]{ref-mcclain2023vineland}
+5. McClain, M. B., \textbf{Schwartz, S. E.,} Bera, J., Farmer, R. L.,
+Serang, S., Harris, B., \& Golson, M. E. (2023). Vineland-3 measurement
+non-invariance in children with and without intellectual and
+developmental disabilities. \emph{American Journal on Intellectual and
+Developmental Disabilities}, \emph{128}(4), 334--343.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Refereed Journal Papers -
+2022}\label{publications-refereed-journal-papers---2022}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-11ac5ee3431fbe8d29075eba9defc8cc}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-fox2022lluna}
+1. Fox, C., Jones, S., Gillam, S., Israelsen-Augenstein, M.,
+\textbf{Schwartz, S. E.,} \& Gillam, R. B. (n.d.). Automated
+progress-monitoring through literate language use in narrative
+assessment (LLUNA). \emph{Frontiers in Psychology}, \emph{Technology to
+the Rescue: Automating Language Sample Analyses for the Assessment and
+Treatment of Communication Disorders across the Life-span}, Manuscript
+Published: May 16, 2022.
+
+\bibitem[\citeproctext]{ref-Reuveni2022cannabinoids}
+2. Reuveni, N., Carlson, C., \textbf{Schwartz, S. E.,} Meter, D.,
+Barrett, T., \& Freeman, S. M. (n.d.). The antidepressant and anxiolytic
+effect of cannabinoids in chronic unpredictable stress: A preclinical
+systematic review and meta-analysis. \emph{Research and Practice for
+Persons with Severe Disabilities}, \emph{Under Review: 8-9-2021},
+Reference Number: 2021TP001023.
+
+\bibitem[\citeproctext]{ref-Ferguson2022parsex}
+3. Ferguson, M. M., Dotterer, A. M., \textbf{Schwartz, S. E.,} \&
+Bradford, K. (2022). Parental sexual communication self-efficacy with
+toddlers and young children: An active learning intervention. \emph{Sex
+Education}, \emph{0}(0), 1--19.
+\url{https://doi.org/10.1080/14681811.2022.2034612}
+
+\bibitem[\citeproctext]{ref-golson2022current}
+4. Golson, M. E., Benallie, K. J., Benney, C. M.,
+\textbf{Schwartz, S. E.,} McClain, M. B., \& Harris, B. (2022). Current
+state of autism knowledge in the general population of the united
+states. \emph{Research in Autism Spectrum Disorders}, \emph{90}, 101886.
+
+\bibitem[\citeproctext]{ref-golson2022influences}
+5. Golson, M. E., Haverkamp, C. R., McClain, M. B.,
+\textbf{Schwartz, S. E.,} Ha, J., Harris, B., \& Benallie, K. J. (2022).
+Influences of student race/ethnicity and gender on autism special
+education classification considerations. \emph{Autism}, \emph{26}(6),
+1423--1435.
+
+\bibitem[\citeproctext]{ref-vernon2022sex}
+6. Vernon, E. K., Gonzalez Jr, H. L., \textbf{Schwartz, S.}, Rattinger,
+G. B., Drewel, M., Smith, K. R., DeBerard, S., Kauwe, J., Buhusi, M., \&
+Tschanz, J. T. (2022). Sex differences in risk for alzheimer's disease
+with extended maternal and paternal family history and vascular risk
+factors. The cache county study. \emph{Alzheimer's \& Dementia},
+\emph{18}, e062914.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Refereed Journal Papers -
+2021}\label{publications-refereed-journal-papers---2021}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-fff70958d5cbcb8481e89a9702523ebd}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-aller2021measuring}
+1. Aller, T. B., Fauth, E. B., Novak, J. R., \& \textbf{Schwartz, S. E.}
+(2021). Measuring mental health literacy: Development of the mental
+health awareness and advocacy assessment tool. \emph{Journal of
+MultiDisciplinary Evaluation}, \emph{17}(39), 15--31.
+
+\bibitem[\citeproctext]{ref-england2021relationship}
+2. England, D., Ruddy, K. L., Dakin, C. J., \textbf{Schwartz, S. E.,}
+Butler, B., \& Bolton, D. A. (2021). Relationship between speed of
+response inhibition and ability to suppress a step in midlife and older
+adults. \emph{Brain Sciences}, \emph{11}(5), 643.
+
+\bibitem[\citeproctext]{ref-golson2021influences}
+3. Golson, M. E., Haverkamp, C. R., McClain, M. B.,
+\textbf{Schwartz, S. E.,} Ha, J., Harris, B., \& Benallie, K. J. (2021).
+Influences of student race/ethnicity and gender on autism special
+education classification considerations. \emph{Autism},
+13623613211050440.
+
+\bibitem[\citeproctext]{ref-mcclain2021differential}
+4. McClain, M. B., Harris, B., \textbf{Schwartz, S. E.,} \& Golson, M.
+E. (2021). Brief report: Differential item and test functioning of the
+autism spectrum rating scales: A follow-up evaluation in a diverse,
+nonclinical sample. \emph{Journal of Psychoeducational Assessment},
+\emph{39}(2), 247--257.
+
+\bibitem[\citeproctext]{ref-mcclain2021effective}
+5. McClain, M. B., Haverkamp, C. R., Benallie, K. J.,
+\textbf{Schwartz, S. E.,} \& Simonsmeier, V. (2021). How effective are
+reading comprehension interventions for children with ASD? A
+meta-analysis of single-case design studies. \emph{School Psychology},
+\emph{36}(2), 107.
+
+\bibitem[\citeproctext]{ref-murray2021sleep}
+6. Murray, J., Gonzalez, H. L., \textbf{Schwartz, S. E.,} Rattinger, G.
+B., Liu, Y., Hammond, A. G., Kauzor, K. E., Drewel, M., \& Tschanz, J.
+T. (2021). Sleep disturbance and association with cognitive and
+functional trajectories in all cause dementia: The cache county dementia
+progression study. \emph{Alzheimer's \& Dementia}, \emph{17}, e054131.
+
+\bibitem[\citeproctext]{ref-pitt2021long}
+7. Pitt, C., Muñoz, K., \textbf{Schwartz, S.}, \& Kunz, J. M. (2021).
+The long-term stability of the electrical stapedial reflex threshold.
+\emph{Otology \& Neurotology}, \emph{42}(1), 188--196.
+
+\bibitem[\citeproctext]{ref-wengreen2021randomized}
+8. Wengreen, H. J., Joyner, D., Kimball, S. S.,
+\textbf{Schwartz, S. E.,} \& Madden, G. J. (2021). A randomized
+controlled trial evaluating the FIT game's efficacy in increasing fruit
+and vegetable consumption. \emph{Nutrients}, \emph{13}(8), 2646.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Refereed Journal Papers -
+2020}\label{publications-refereed-journal-papers---2020}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-42fe5200e2060397a1e730ba7472ce80}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-benallie2020validation}
+1. Benallie, K. J., McClain, M. B., Harris, B., \&
+\textbf{Schwartz, S. E.} (2020). Validation of the ASKSG with a parent
+sample in the united states. \emph{Journal of Autism and Developmental
+Disorders}, \emph{50}(12), 4557--4565.
+
+\bibitem[\citeproctext]{ref-bringhurst2020wingate}
+2. Bringhurst, R. F., Wagner, D. R., \& \textbf{Schwartz, S.} (2020).
+Wingate anaerobic test reliability on the velotron with ice hockey
+players. \emph{The Journal of Strength \& Conditioning Research},
+\emph{34}(6), 1716--1722.
+
+\bibitem[\citeproctext]{ref-buenabad2020cluster}
+3. Buenabad, N. G. A., Ramos, R. S., \textbf{Schwartz, S.}, López, M. L.
+G., Juárez, A. D. D., Gallegos, A. B. O., Ortega, T. G. G., Pérez, L.
+V., Icaza, M. E. M.-M., Rodrı́guez, M. M. D., et al. (2020). Cluster
+randomized trial of a multicomponent school-based program in mexico to
+prevent behavioral problems and develop social skills in children.
+\emph{Child \& Youth Care Forum}, \emph{49}, 343--364.
+
+\bibitem[\citeproctext]{ref-harris2020knowledge}
+4. Harris, B., McClain, M. B., \textbf{Schwartz, S.}, \& Haverkamp, C.
+R. (2020). Knowledge of autism spectrum disorder among school psychology
+graduate students. \emph{Contemporary School Psychology}, 1--9.
+
+\bibitem[\citeproctext]{ref-mcclain2020asksp}
+5. McClain, M. B., Harris, B., Haverkamp, C. R., Golson, M. E., \&
+\textbf{Schwartz, S. E.} (2020). The ASKSP revised (ASKSP-r) as a
+measure of ASD knowledge for professional populations. \emph{Journal of
+Autism and Developmental Disorders}, \emph{50}(3), 998--1006.
+
+\bibitem[\citeproctext]{ref-mcclain2020evaluation}
+6. McClain, M. B., Harris, B., \textbf{Schwartz, S. E.,} \& Golson, M.
+E. (2020). Evaluation of the autism spectrum rating scales in a diverse,
+nonclinical sample. \emph{Journal of Psychoeducational Assessment},
+\emph{38}(6), 740--752.
+
+\bibitem[\citeproctext]{ref-mcclain2020school}
+7. McClain, M. B., Shahidullah, J. D., Mezher, K. R., Haverkamp, C. R.,
+Benallie, K. J., \& \textbf{Schwartz, S. E.} (2020). School-clinic care
+coordination for youth with ASD: A national survey of school
+psychologists. \emph{Journal of Autism and Developmental Disorders},
+\emph{50}(9), 3081--3091.
+
+\bibitem[\citeproctext]{ref-nagaraj2020auditory}
+8. Nagaraj, N. K., Magimairaj, B. M., \& \textbf{Schwartz, S.} (2020).
+Auditory distraction in school-age children relative to individual
+differences in working memory capacity. \emph{Attention, Perception, \&
+Psychophysics}, \emph{82}, 3581--3593.
+
+\bibitem[\citeproctext]{ref-torres2020reactions}
+9. Torres, L., Reveles, A. K., Mata-Greve, F., \textbf{Schwartz, S.}, \&
+Domenech Rodriguez, M. M. (2020). Reactions to witnessing ethnic
+microaggressions: An experimental study. \emph{Journal of Social and
+Clinical Psychology}, \emph{39}(2), 141--164.
+
+\bibitem[\citeproctext]{ref-vazquez2020innovative}
+10. Vázquez, A. L., Rodrı́guez, M. M. D., Barrett, T. S.,
+\textbf{Schwartz, S.}, Buenabad, N. G. A., Gamiño, M. N. B., López, M.
+de L. G., \& Velázquez, J. A. V. (2020). Innovative identification of
+substance use predictors: Machine learning in a national sample of
+mexican children. \emph{Prevention Science}, \emph{21}(2), 171--181.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Refereed Journal Papers -
+2019}\label{publications-refereed-journal-papers---2019}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-f21370c8901f220ba9f1c38726cf908b}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-bolton2019motor}
+1. Bolton, D. A., Cole, D. M., Butler, B., Mansour, M., Rydalch, G.,
+McDannald, D. W., \& \textbf{Schwartz, S. E.} (2019). Motor preparation
+for compensatory reach-to-grasp responses when viewing a wall-mounted
+safety handle. \emph{Cortex}, \emph{117}, 135--146.
+
+\bibitem[\citeproctext]{ref-bolton2019priming}
+2. Bolton, D. A., \textbf{Schwartz, S. E.,} Mansour, M., Rydalch, G., \&
+McDannald, D. W. (2019). Priming of grasping muscles when viewing a
+safety handle is diminished with age. \emph{Maturitas}, \emph{121},
+7--12.
+
+\bibitem[\citeproctext]{ref-kauzor2019p1}
+3. Kauzor, K. E., \textbf{Schwartz, S.}, Tubbs, Z., Hammond, A. G., \&
+Tschanz, J. T. (2019). P1-478: PATTERNS OF NEUROPSYCHIATRIC SYMPTOMS AND
+SURVIVAL AMONG OLDER ADULTS WITH VARIOUS SUBTYPES OF DEMENTIA: THE CACHE
+COUNTY DEMENTIA PROGRESSION STUDY. \emph{Alzheimer's \& Dementia},
+\emph{15}, P452--P452.
+
+\bibitem[\citeproctext]{ref-matyi2019lifetime}
+4. Matyi, J. M., Rattinger, G. B., \textbf{Schwartz, S.}, Buhusi, M., \&
+Tschanz, J. T. (2019). Lifetime estrogen exposure and cognition in late
+life: The cache county study. \emph{Menopause (New York, NY)},
+\emph{26}(12), 1366.
+
+\bibitem[\citeproctext]{ref-mcclain2019brief}
+5. McClain, M. B., Harris, B., \textbf{Schwartz, S. E.,} Benallie, K.
+J., Golson, M. E., \& Benney, C. M. (2019). Brief report: Development
+and validation of the autism spectrum knowledge scale general population
+version: Preliminary analyses. \emph{Journal of Autism and Developmental
+Disorders}, \emph{49}(7), 3007--3015.
+
+\bibitem[\citeproctext]{ref-montgomery2019comparison}
+6. Montgomery, J. W., Gillam, R. B., Evans, J. L.,
+\textbf{Schwartz, S.}, \& Fargo, J. D. (2019). A comparison of the
+storage-only deficit and joint mechanism deficit hypotheses of the
+verbal working memory storage capacity limitation of children with
+developmental language disorder. \emph{Journal of Speech, Language, and
+Hearing Research}, \emph{62}(10), 3808--3825.
+
+\bibitem[\citeproctext]{ref-rattinger2019neuropsychiatric}
+7. Rattinger, G. B., Sanders, C. L., Vernon, E., \textbf{Schwartz, S.},
+Behrens, S., Lyketsos, C. G., \& Tschanz, J. T. (2019). Neuropsychiatric
+symptoms in patients with dementia and the longitudinal costs of
+informal care in the cache county population. \emph{Alzheimer's \&
+Dementia: Translational Research \& Clinical Interventions}, \emph{5},
+81--88.
+
+\bibitem[\citeproctext]{ref-vazquez2019early}
+8. Vázquez, A. L., Domenech Rodrı́guez, M. M., \textbf{Schwartz, S.},
+Amador Buenabad, N. G., Bustos Gamiño, M. N., Gutierrez López, M. de L.,
+\& Villatoro Velázquez, J. A. (2019). Early adolescent substance use in
+a national sample of mexican youths: Demographic characteristics that
+predict use of alcohol, tobacco, and other drugs. \emph{Journal of
+Latinx Psychology}, \emph{7}(4), 273.
+
+\bibitem[\citeproctext]{ref-vazquez2019authors}
+9. Vázquez, A. L., Rodrı́guez, M. M. D., \textbf{Schwartz, S. E.,}
+Buenabad, N. G. A., Gamiño, M. N. B., López, M. de L. G., Velázquez, J.
+A. V., Vázquez, A., Domenech Rodrı́guez, M., \textbf{Schwartz, S.}, et
+al. (2019). \emph{Authors' permission. The final article will be
+available, upon publication, via its DOI}.
+
+\bibitem[\citeproctext]{ref-wagner2019mode}
+10. Wagner, D. R., Thompson, B. J., Anderson, D. A., \&
+\textbf{Schwartz, S.} (2019). A-mode and b-mode ultrasound measurement
+of fat thickness: A cadaver validation study. \emph{European Journal of
+Clinical Nutrition}, \emph{73}(4), 518--523.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Refereed Journal Papers -
+2018}\label{publications-refereed-journal-papers---2018}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-fe04386c4fef28ef7046087f03611967}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-behrens2018}
+1. Behrens, S., Rattinger, G. B., \textbf{Schwartz, S. E.,} Matyi, J.,
+Sanders, C., DeBerard, M. S., Lyketsos, C. G., \& Tschanz, J. T. (2018).
+Use of FDA approved medications for alzheimer's disease in mild dementia
+is associated with reduced informal costs of care. \emph{International
+Psychogeriatrics}, \emph{30}(10), 1499--1507.
+
+\bibitem[\citeproctext]{ref-bringhurst2018}
+2. Bringhurst, R. F., Wagner, D. R., \& \textbf{Schwartz, S.} (2018).
+Wingate anaerobic test reliability on the velotron with ice hockey
+players. \emph{Journal of Strength and Conditioning Research}.
+\url{https://doi.org/10.1519/JSC.0000000000002458}
+
+\bibitem[\citeproctext]{ref-montgomery2018}
+3. Montgomery, J. W., Evans, J. L., Fargo, J. D.,
+\textbf{Schwartz, S. E.,} \& Gillam, R. B. (2018). Structural
+relationship between cognitive processing and syntactic sentence
+comprehension in children with and without developmental language
+disorder. \emph{Journal of Speech, Language, and Hearing Research},
+\emph{61}(12), 2950--2976.
+
+\bibitem[\citeproctext]{ref-sanders2018}
+4. Sanders, C. L., Wengreen, H. J., \textbf{Schwartz, S. E.,} Behrens,
+S. J., Corcoran, C., Lyketsos, C. G., \& Tschanz, J. T. (2018).
+Nutritional status is associated with severe dementia and mortality.
+\emph{Alzheimer Disease \& Associated Disorders}, \emph{32}(4),
+298--304.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Refereed Journal Papers - 2017 and
+Prior}\label{publications-refereed-journal-papers---2017-and-prior}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-ea6365bba6475e39572be695976f1cdf}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-rattinger2016closer}
+1. Rattinger, G. B., Fauth, E. B., Behrens, S., Sanders, C.,
+\textbf{Schwartz, S. E.,} Norton, M. C., Corcoran, C., Mullins, C. D.,
+Lyketsos, C. G., \& Tschanz, J. T. (2016). Closer caregiver and
+care-recipient relationships predict lower informal costs of dementia
+care: The cache county dementia progression study. \emph{Alzheimer's \&
+Dementia}, \emph{12}(8), 917--924.
+
+\bibitem[\citeproctext]{ref-rattinger2016}
+2. Rattinger, G. B., Fauth, E. B., Behrens, S., Sanders, C.,
+\textbf{Schwartz, S. E.,} Norton, M. C., Corcoran, C., Mullins, C. D.,
+Lyketsos, C. G., \& Tschanz, J. T. (2016). Closer caregiver and
+care-recipient relationships predict lower informal costs of dementia
+care: The cache county dementia progression study. \emph{Alzheimer's \&
+Dementia}, \emph{12}(8), 917--924.
+
+\bibitem[\citeproctext]{ref-sanders2016}
+3. Sanders, C., Behrens, S., \textbf{Schwartz, S. E.,} Wengreen, H.,
+Corcoran, C. D., Lyketsos, C. G., \& Tschanz, J. T. (2016). Nutritional
+status is associated with faster cognitive decline and worse functional
+impairment in the progression of dementia: The cache county dementia
+progression study 1. \emph{Journal of Alzheimer's Disease},
+\emph{52}(1), 33--42.
+
+\bibitem[\citeproctext]{ref-hatch2015}
+4. Hatch, D. J., \textbf{Schwartz, S. E.,} \& Norton, M. C. (2015).
+Depression and antidepressant use moderate association between widowhood
+and alzheimer's disease. \emph{International Journal of Geriatric
+Psychiatry}, \emph{30}(3), 292--299.
+
+\bibitem[\citeproctext]{ref-peters2015}
+5. Peters, M. E., \textbf{Schwartz, S. E.,} Han, D., Rabins, P. V.,
+Steinberg, M., Tschanz, J. T., \& Lyketsos, C. G. (2015).
+Neuropsychiatric symptoms as predictors of progression to severe
+alzheimer's dementia and death: The cache county dementia progression
+study. \emph{American Journal of Psychiatry}, \emph{172}(5), 460--465.
+
+\bibitem[\citeproctext]{ref-rattinger2015}
+6. Rattinger, G. B., \textbf{Schwartz, S. E.,} Mullins, C. D., Corcoran,
+C., Zuckerman, I. H., Sanders, C., Norton, M. C., Fauth, E. B.,
+Leoutsakos, J.-M. S., Lyketsos, C. G., et al. (2015). Dementia severity
+and the longitudinal costs of informal care in the cache county
+population. \emph{Alzheimer's \& Dementia}, \emph{11}(8), 946--954.
+\url{https://doi.org/10.1016/j.jalz.2014.11.004}
+
+\bibitem[\citeproctext]{ref-gurgel2014}
+7. Gurgel, R. K., Ward, P. D., \textbf{Schwartz, S. E.,} Norton, M. C.,
+Foster, N. L., \& Tschanz, J. T. (2014). Relationship of hearing loss
+and dementia: A prospective, population-based study. \emph{Otology \&
+Neurotology: Official Publication of the American Otological Society,
+American Neurotology Society {[}and{]} European Academy of Otology and
+Neurotology}, \emph{35}(5), 775.
+
+\bibitem[\citeproctext]{ref-fauth2013}
+8. Fauth, E. B., \textbf{Schwartz, S. E.,} Tschanz, J. T., Østbye, T.,
+Corcoran, C., \& Norton, M. C. (2013). Baseline disability in activities
+of daily living predicts dementia risk even after controlling for
+baseline global cognitive ability and depressive symptoms.
+\emph{International Journal of Geriatric Psychiatry}, \emph{28}(6),
+597--606.
+
+\bibitem[\citeproctext]{ref-rabins2013}
+9. Rabins, P. V., \textbf{Schwartz, S. E.,} Black, B. S., Corcoran, C.,
+Fauth, E., Mielke, M., Christensen, J., Lyketsos, C., \& Tschanz, J.
+(2013). Predictors of progression to severe alzheimer's disease in an
+incidence sample. \emph{Alzheimer's \& Dementia}, \emph{9}(2), 204--207.
+
+\bibitem[\citeproctext]{ref-tschanz2013}
+10. Tschanz, J., Pfister, R., Steffens, D., Corcoran, C., Smith, K.,
+Østbye, T., \textbf{Schwartz, S.}, Welsh-Bohmer, K., \& M, N. (2013).
+Stressful events in late-life: Effects on cogni-tive decline. The cache
+county study. \emph{International Journal of Geriatric Psychiatry},
+\emph{28}(8), 820--830.
+
+\bibitem[\citeproctext]{ref-norton2011}
+11. Norton, M. C., Smith, K. R., Østbye, T., Tschanz, J. A. T.,
+\textbf{Schwartz, S. E.,} Corcoran, C., Breitner, J. C., Steffens, D.
+C., Skoog, I., Rabins, P. V., et al. (2011). Early parental death and
+remarriage of widowed parents as risk factors for alzheimer disease: The
+cache county study. \emph{The American Journal of Geriatric Psychiatry},
+\emph{19}(9), 814--824.
+
+\bibitem[\citeproctext]{ref-tschanz2011}
+12. Tschanz, J. T., Corcoran, C. D., \textbf{Schwartz, S. E.,} Treiber,
+K., Green, R. C., Norton, M. C., Mielke, M. M., Piercy, K., Steinberg,
+M., Rabins, P. V., et al. (2011). Progression of cognitive, functional,
+and neuropsychiatric symptom domains in a population cohort with
+alzheimer dementia: The cache county dementia progression study.
+\emph{The American Journal of Geriatric Psychiatry}, \emph{19}(6),
+532--542.
+
+\bibitem[\citeproctext]{ref-norton2010}
+13. Norton, M. C., Smith, K. R., Østbye, T., Tschanz, J. T., Corcoran,
+C., \textbf{Schwartz, S. E.,} Piercy, K. W., Rabins, P. V., Steffens, D.
+C., Skoog, I., et al. (2010). Greater risk of dementia when spouse has
+dementia? The cache county study: {[}See editorial comments by dr. Peter
+p.~Vitaliano, pp 976--978{]}. \emph{Journal of the American Geriatrics
+Society}, \emph{58}(5), 895--900.
+
+\bibitem[\citeproctext]{ref-norton2009}
+14. Norton, M. C., Smith, K. R., Ostbye, T., Tschanz, J. T., Corcoran,
+C., \textbf{Schwartz, S. E.,} Piercy, K. W., Rabins, P. V., Steffens, D.
+C., Breitner, J. C., et al. (2009). Spousal dementia caregiving as a
+risk factor for incident dementia. \emph{Alzheimer's \& Dementia: The
+Journal of the Alzheimer's Association}, \emph{5}(4), 380--381.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Papers in Refereed Conference
+Proceedings}\label{publications-papers-in-refereed-conference-proceedings}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-01a8a0846c3dac8afbc2440de9ea2c05}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-buenabad2020cluster}
+1. Buenabad, N. G. A., Ramos, R. S., \textbf{Schwartz, S.}, López, M. L.
+G., Juárez, A. D. D., Gallegos, A. B. O., Ortega, T. G. G., Pérez, L.
+V., Icaza, M. E. M.-M., Rodrı́guez, M. M. D., et al. (2020). Cluster
+randomized trial of a multicomponent school-based program in mexico to
+prevent behavioral problems and develop social skills in children.
+\emph{Child \& Youth Care Forum}, \emph{49}, 343--364.
+
+\bibitem[\citeproctext]{ref-behrens2014agitation}
+2. Behrens, S., Rattinger, G., \textbf{Schwartz, S.}, Lyketsos, C., \&
+Tschanz, J. (2014). AGITATION IN DEMENTIA IS ASSOCIATED WITH WORSE
+CAREGIVER HEALTH OVER TIME: THE CACHE COUNTY STUDY.
+\emph{GERONTOLOGIST}, \emph{54}, 42--42.
+
+\bibitem[\citeproctext]{ref-rattinger2013caregiver}
+3. Rattinger, G., \textbf{Schwartz, S.}, Sanders, C., Corcoran, C.,
+Fauth, E., Norton, M., Lyketsos, C., \& Tschanz, J. (2013). HOW DO
+CAREGIVER RELATIONSHIP CLOSENESS AND COPING STRATEGIES AFFECT THE COSTS
+OF DEMENTIA CARE? \emph{GERONTOLOGIST}, \emph{53}, 114--115.
+
+\bibitem[\citeproctext]{ref-fauth2011baseline}
+4. Fauth, E., \textbf{Schwartz, S.}, Smith, K., Tschanz, J., Ostbye, T.,
+Corcoran, C., \& Norton, M. (2011). BASELINE FUNCTIONAL DISABILITY
+PREDICTS DEMENTIA RISK EVEN AFTER CONTROLLING FOR COGNITIVE STATUS.
+\emph{GERONTOLOGIST}, \emph{51}, 36--37.
+
+\bibitem[\citeproctext]{ref-smith2011dementia}
+5. Smith, K., Hanson, H., Ostbye, T., Tschanz, J.,
+\textbf{Schwartz, S.}, Corcoran, C., \& Norton, M. (2011). DEMENTIA AND
+THE RISK ASSOCIATED WITH MEDICAL CO-MORBIDITIES: RESULTS FROM THE CACHE
+COUNTY STUDY LINKED TO MEDICARE CLAIMS. \emph{GERONTOLOGIST}, \emph{51},
+94--94.
+
+\bibitem[\citeproctext]{ref-bradford2010timing}
+6. Bradford, D., Smith, K., \textbf{Schwartz, S.}, Tschanz, J., Ostbye,
+T., Corcoran, C., Welsh-Bohmer, K., \& Norton, M. (2010). TIMING OF
+OFFSPRING DEATH IN PARENTS'LIVES AND LATE-LIFE COGNITIVE DECLINE. THE
+CACHE COUNTY STUDY. \emph{GERONTOLOGIST}, \emph{50}, 462--462.
+
+\bibitem[\citeproctext]{ref-orsulic2010individuals}
+7. Orsulic-Jeras, S., Menne, H., Whitlatch, C., \textbf{Schwartz, S.},
+\& Johnson, J. (2010). INDIVIDUALS WITH EARLY ONSET DEMENTIA AND THEIR
+CAREGIVERS: PROGRAM ACCEPTABILITY AND FEASIBILITY. \emph{GERONTOLOGIST},
+\emph{50}, 66--66.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Conference Presentations,
+Coauthored}\label{publications-conference-presentations-coauthored}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-3bbbb43a2710a807e93fc984a49ba589}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-wandell2025sex}
+1. Wandell, C., \textbf{Schwartz, S.}, Rattinger, G. B., \& Tschanz, J.
+T. (2025). Poster: Sex differences in the influence of cognitive reserve
+factors on late-life cognition. \emph{Alzheimer's Asociation
+International Conference}.
+
+\bibitem[\citeproctext]{ref-gonzalez2024physical}
+2. Gonzalez, H. L., \textbf{Schwartz, S.}, Rattinger, G. B., Liu, Y.,
+Drewel, M., Mills, M., Buhusi, M., \& Tschanz, J. T. (2024). PHYSICAL
+ACTIVITY AND DIET MODIFY THE SEX SPECIFIC ASSOCIATION BETWEEN
+NEUROTROPHIN SINGLE NUCLEOTIDE POLYMORPHISMS AND INSOMNIA IN LATE-LIFE.
+\emph{Alzheimer's Association International Conference}.
+
+\bibitem[\citeproctext]{ref-bera2022conf}
+3. Bera, J., Goldon, M., McClain, M., Farmer, R., Harris, B., Serang,
+S., \& \textbf{Schwartz, S. E.} (2022). \emph{Testing measurement
+invariance in the vineland 3}. Presented at the Annual Convention of the
+National Association of School Psychologists.
+
+\bibitem[\citeproctext]{ref-holbrook2022asha}
+4. Holbrook, S., \textbf{Schwartz, S. E.,} Barrett, T., \& Gillam, S.
+(2022). \emph{Validity and reliability of a novel speech prosody
+screening tool for autistic children}. Presentation for the American
+Speech-Language-Hearing Association Convention.
+
+\bibitem[\citeproctext]{ref-Matyi2022aaic}
+5. Matyi, J., Drewel, M., \textbf{Schwartz, S. E.,} Rattinger, G. B.,
+Gonzalez, H., DeBerard, M. S., Buhusi, M., Lyketsos, C. G., \& T., T. J.
+(2022). \emph{Brain-derived neurotrophic factor genes are associated
+with neuropsychiatric symptom progression in dementia. The cache county
+dementia progression study.} Abstract accepted for the Alzheimer's
+Asociation International Conference.
+
+\bibitem[\citeproctext]{ref-vernon2022aaic}
+6. Vernon, H. L. and S., K.and Gonzalez, Rattinger, G. B., Drewel, M.,
+Smith, K. R., DeBerard, M. S., Kauwe, J., Buhusi, M., \& T., Tschanz. J.
+(2022). \emph{Sex differences in risk for alzheimer's disease with
+extended maternal and paternal family history and vascular risk factors.
+The cache county study.} Poster to be presented at the Alzheimer's
+Asociation International Conference.
+
+\bibitem[\citeproctext]{ref-golson2021apa}
+7. Golson, M. E., McClain, M. B., \& \textbf{Schwartz, S. E.} (2021).
+\emph{Measurement invariance of the conners-3.} Poster presented for the
+virtual meeting of the American Psychological Association, Division 16
+(School Psychology).
+
+\bibitem[\citeproctext]{ref-golson2021isa}
+8. Golson, M. E., McClain, M. B., \textbf{Schwartz, S. E.,} Bakner, K.
+E., Gabrielsen, T., \& Harris, B. (2021). \emph{Measurement invariance
+across gender of the ASRS in a non-clinical diverse sample.} Poster
+presented at the virtual meeting of the International Society of Autism
+Research Annual Meeting.
+
+\bibitem[\citeproctext]{ref-cole2019poster}
+9. Cole, D., Butler, B., M, M., \textbf{Schwartz, S. E.,} \& Bolton, D.
+(2019). \emph{An invisible hand: Automatic preparation for arresting a
+fall when viewing a handrail.} Poster presented at the International
+Society of Posture; Gait Research World Congress, Ediburgh, Scotland.
+
+\bibitem[\citeproctext]{ref-Kauzor2019poster}
+10. Kauzor, K., \textbf{Schwartz, S. E.,} Hammond, A., Tubbs, Z.,
+Rattinger, G., \& Tschanz, J. (2019). \emph{Patterns of neuropsychiatric
+symptoms and survival among older adults with various subtypes of
+dementia. The cache county dementia progression study.} Poster presented
+at the Annual Alzheimer's Association International Conference, Los
+Angeles, CA.
+
+\bibitem[\citeproctext]{ref-benallie2018poster}
+11. Benallie, K., Benney, C., McClain, M. B., \textbf{Schwartz, S. E.,}
+Peacock, G., \& Harris, B. (2018). \emph{Autism spectrum knowledge scale
+(ASKS): General population version: Development and preliminary
+validation.} Poster presented at the Rocky Mountain Psychological
+Association annual conference, Denver, Colorado.
+
+\bibitem[\citeproctext]{ref-Matyi2018poster}
+12. Matyi, J., Rattinger, G., Vernon, E., \textbf{Schwartz, S. E.,}
+Buhusi, M., \& Tschanz, J. (2018). \emph{Lifetime estrogen exposure is
+associated with cognitive status in late life: The cache county study.}
+Poster presented at the Annual Gerontological Society of America
+conference, Boston, MA.
+
+\bibitem[\citeproctext]{ref-vernon2018poster}
+13. Vernon, E., Behrens, S., Rattinger, G., \textbf{Schwartz, S. E.,} \&
+Tschanz, J. (2018). \emph{Use of sleep medications is associated with
+poorer cognition in older male adults: The cache county study.} Poster
+presented at the Annual Alzheimer's Association International
+Conference, Chicago, IL.
+
+\bibitem[\citeproctext]{ref-rattinger2015poster}
+14. Rattinger, G., Behrens, S., \textbf{Schwartz, S.}, Corcoran, C.,
+Piercy, K., Norton, M., Fauth, E., Lyketsos, C., \& Tschanz, J. (2015).
+\emph{How do neuropsychiatric symptoms in persons with dementia affect
+caregiver physical and mental health over time? The cache county
+dementia progression study.} Poster presented at the Annual Alzheimer's
+Association International Conference, Washington, DC.
+
+\bibitem[\citeproctext]{ref-saunders2015poster}
+15. Sanders, C., Wengreen, H., \textbf{Schwartz, S.}, Behrens, S.,
+Corcoran, C., Lyketsos, C., \& Tschanz, J. (2015). \emph{Nutritional
+status and neuropsychological functioning in persons with dementi: The
+cache county dementia progression study.} Poster presented at the Annual
+International Neuropsychological Society Meeting, Denver, CO.
+
+\bibitem[\citeproctext]{ref-joann2015poster}
+16. Tschanz, J., Sanders, C., Wengreen, H., E, S. S., Behrens, S.,
+Corcoran, C., \& Lyketsos, C. (2015). \emph{Status and neuropsychiatric
+symptoms in dementia: The cache county dementia study.} Poster presented
+at the Annual Alzheimer's Association International Conference,
+Washington, DC.
+
+\bibitem[\citeproctext]{ref-behrens2014poster}
+17. Behrens, S., Rattinger, G., \textbf{Schwartz, S.}, Lyketsos, C., \&
+Tschanz, J. (2014). \emph{Agitation in dementia is associated with worse
+caregiver health over time: The cache county study.} Poster presented at
+the Gerontological Society of America Annual Meeting, Washington, DC.
+
+\bibitem[\citeproctext]{ref-peters2014poster}
+18. Peters, M., \textbf{Schwartz, S. E.,} Han, D., Rabins, P., Tschanz,
+J., \& Lyketsos, C. (2014). \emph{Neuropsychiatric symptoms as
+predictors of progression to severe alzheimer's dementia and death: The
+cache county study}. Poster presented at the Annual American Association
+of Geriatric Psychiatrists, Orlando, FL.
+
+\bibitem[\citeproctext]{ref-joann2014poster}
+19. Tschanz, J., Sanders, C., Wengreen, H., \textbf{Schwartz, S. E.,}
+Behrens, S., Corcoran, C., \& Lyketsos, C. (2014). \emph{Nutritional
+status and neuropsychiatric symptoms in dementia: The cache county
+dementia study.} Paper presented at the Gerontological Society of
+America Annual Meeting, Washington, DC.
+
+\bibitem[\citeproctext]{ref-gurgel2013pres}
+20. Gurgel, R., Ward, D., \textbf{Schwartz, S. E.,} Norton, M., \&
+Tschanz, J. (2013). \emph{Relationship of hearing loss and dementia: A
+prospective, population-based study.} Oral presentation at the American
+Otological Society meeting, Orlando, FL.
+
+\bibitem[\citeproctext]{ref-gail2013pres}
+21. Rattinger, G., \textbf{Schwartz, S. E.,} Corcoran, C., Zuckerman,
+I., Mullins, C., Norton, M., Fauth, E., Leoutsakos, J., Lyketsos, C., \&
+Tschanz, J. (2013). \emph{Effect of dementia severity on costs of care
+in the cache county dementia progression study cohort.} Presentation at
+the Alzheimer's Association International Conference on Alzheimer's
+Disease, Boston, MA.
+
+\bibitem[\citeproctext]{ref-gail2013oral}
+22. Rattinger, G., \textbf{Schwartz, S. E.,} Sanders, C., Corcoran, C.,
+Fauth, E., Norton, M., Lyketsos, C., \& Tschanz, J. (2013). \emph{Effect
+of caregiver relationship closeness and coping strategies on costs of
+care in the cache county dementia progression study cohort.}
+Presentation at the Gerontological Society of America Conference, New
+Orleans, LA.
+
+\bibitem[\citeproctext]{ref-sanders2013pres}
+23. Sanders, C., Wengreen, H., Corcoran, C., \textbf{Schwartz, S.},
+Norton, M., Lyektsos, C., \& Tschanz, J. (2013). \emph{Nutritional
+status and progression of dementia. The cache county dementia
+progression study.} Presentation at the Alzheimer's Association
+International Conference on Alzheimer's Disease, Boston, MA.
+
+\bibitem[\citeproctext]{ref-joann2013pres}
+24. Tschanz, J., \textbf{Schwartz, S.}, Gilbert, M., Wanzek, J.,
+Sanders, C., Mielke, M., Cocoran, C., Norton, M., \& Lyketsos, C.
+(2013). \emph{Vascular factors as predictors of severe dementia and
+mortality in alzheimer's disease. The cache county dementia progression
+study.} Presentation at the Alzheimer's Association International
+Conference on Alzheimer's Disease, Boston, MA.
+
+\bibitem[\citeproctext]{ref-wanzek2013pres}
+25. Wanzek, J., \textbf{Schwartz, S.}, Sanders, C., Gilbert, M., Munger,
+R., Marano, C., Mielke, M., Lyketsos, C., \& Tschanz, J. (2013).
+\emph{Diabetes and metabolic syndrome in predicting severe dementia,
+institutionalization and mortality in a population-based sample of
+alzheimer's disease: The cache county dementia progression study.}
+Presentation at the Society of Behavioral Medicine Conference, San
+Francisco, CA.
+
+\bibitem[\citeproctext]{ref-beth2012pres}
+26. Fauth, E., \textbf{Schwartz, S. E.,} Norton, M., Piercy, K.,
+Lyketsos, C., \& JT, T. (2012). \emph{Do closer relationships between
+caregivers and persons with alzheimer's dementia affect the progression
+of neuropsychiatric symptoms in the care recipient?} Presentation at the
+Gerontological Society of America meeting, San Diego, CA.
+
+\bibitem[\citeproctext]{ref-steinberg2012pres}
+27. S, M., \textbf{Schwartz, S. E.,} Tschanz, J., Corcoran, B., C nad
+Black, Fauth, E., Mielke, M., Lyketsos, C., \& Rabins, P. (2012).
+\emph{Neuropsychiatric symptoms at baseline shorten time to severe
+dementia in a population-based sample of incident alzheimer's disease.}
+Presentation at the Alzheimer's Association International Conference on
+Alzheimer's Disease, Vancouver, B.C.
+
+\bibitem[\citeproctext]{ref-buckley2011pres}
+28. Buckley, T., Corcoran, C., \textbf{Schwartz, S. E.,} Breitner, J.,
+Zandi, P., Norton, M., Deberard, M., Wengreen, H., Foley, B.,
+Welsh-Bohmer, K., Lyketsos, C., \& Tschanz, J. (2011). \emph{NSAID use
+does not affect dementia progression or survival in alzheimer's disease:
+The cache county dementia progression study.} Presentation at the
+Alzheimer's Association International Conference on Alzheimer's Disease,
+Paris, Frane.
+
+\bibitem[\citeproctext]{ref-fauth2011pres}
+29. Fauth, E. B., \textbf{Schwartz, S. E.,} Smith, K., Tschanz, J.,
+Ostbye, T., Corcoran, C., \& Norton, M. C. (2011). \emph{Baseline
+functional disability predicts dementia risk even after controlling for
+cognitive status.} Presentation at the Annual Meeting of the
+Gerontological Society of America, Boston, MA.
+
+\bibitem[\citeproctext]{ref-rabins2011pres}
+30. Rabins, P., \textbf{Schwartz, S. E.,} Tschanz, J., Corcoran, C.,
+Black, B., Fauth, E., Mielke, M., \& Lyketsos, C. (2011). \emph{Risk
+factors for severe dementia from a population-based sample of incident
+alzheimer's disease: The cache county dementia progression study.}
+Presentation at the Alzheimer's Association International Conference on
+Alzheimer's Disease, Paris, Frane.
+
+\bibitem[\citeproctext]{ref-smith2011pres}
+31. Smith, K., Hanson, H., Ostbye, T., Tschanz, J.,
+\textbf{Schwartz, S. E.,} Corcoran, C., \& Norton, M. (2011).
+\emph{Comorbidity and risk for dementia using medicare datasets.}
+Presentation at the Annual Meeting of the Gerontological Society of
+America, Boston, MA.
+
+\bibitem[\citeproctext]{ref-brandford2010pres}
+32. Bradford, D., Smith, K., \textbf{Schwartz, S. E.,} Tschanz, J.,
+Ostbye, T., Corcoran, C., Welsh-Bohmer, K., \& Norton, M. (2010).
+\emph{Timing of offspring death in parents' lives and late-life
+cognitive decline. The cache county study.} Poster presentation at the
+Annual Meeting of the Gerontological Society of America, New Orleans,
+LA.
+
+\bibitem[\citeproctext]{ref-maria2010pres}
+33. Norton, M., Bradford, D., Smith, K., \textbf{Schwartz, S. E.,}
+Tschanz, J., Ostbye, T., Corcoran, C., \& Welsh-Bohmer, K. (2010).
+\emph{Family size moderates the association between offspring death and
+rate of cognitive decline. The cache county study.} Poster presentation
+at the Annual Meeting of the Gerontological Society of America, New
+Orleans, LA.
+
+\bibitem[\citeproctext]{ref-snyder2010pres}
+34. Snyder, C., Smith, C., Lee, S., Norton, M., Piercy, K., Fauth, E.,
+Corcoran, C., DeBerard, S., \textbf{Schwartz, S. E.,} Morrison, A.,
+Rabins, P., Lyketsos, C., \& Tschanz, J. (2010). \emph{Dementia
+caregivers and coping strategies: Relationship to health and well-being.
+The cache county dementia progression study.} Poster presentation at the
+Annual Meeting of the Gerontological Society of America, New Orleans,
+LA.
+
+\bibitem[\citeproctext]{ref-joann2010pres}
+35. Tschanz, J., Pfister, R., Steffens, D., Corcoran, C., Smith, K.,
+Ostbye, T., \textbf{Schwartz, S. E.,} Welsh-Bohmer, K., \& Norton, M.
+(2010). \emph{Stressful events in late-life: Effects on cognitive
+decline. The cache county study.} Poster presentation at the Annual
+Meeting of the Gerontological Society of America, New Orleans, LA.
+
+\bibitem[\citeproctext]{ref-maria2009pres}
+36. Norton, M., Smith, K., Ostbye, T., Tschanz, J., Corcoran, C.,
+\textbf{Schwartz, S. E.,} Piercy, K., Rabins, P., Steffens, D.,
+Breitner, J., \& Welsh-Bohmer, K. (2009). \emph{Spousal dementia
+caregiving as a risk factor for incident dementia.} Poster presentation
+at the International Conference on Alzheimer's Disease, Vienna, Austria.
+
+\bibitem[\citeproctext]{ref-chris2009pres}
+37. Corcoran, C., Tschanz, J., Steinberg, M., \textbf{Schwartz, S. E.,}
+Norton, M., Welsh-Bohmer, K., Breitner, J., \& Lyketsos, C. (2006).
+\emph{Longitudinal course of neuropsychiatric symptoms in dementia. The
+cache county study.} Poster presentation at the 10th International
+Conference on Alzheimer's Disease; Related Disorders, Madrid Spain.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Work Not Peer
+Reviewed}\label{publications-work-not-peer-reviewed}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-b25813ee68daa52f8de006600cdc5378}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-McClain_Harris_Schwartz_Haverkamp_Golson_2019}
+1. McClain, M. B., Harris, B., \textbf{Schwartz, S. E.,} Haverkamp, C.
+R., \& Golson, M. (2019). \emph{Development and validation of the autism
+spectrum knowledge scale - professional version: Preliminary analyses}.
+OSF. \url{https://doi.org/10.17605/OSF.IO/8M9UB}
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Disertation}\label{publications-disertation}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-8b1281a69e493e0db82cbff31135902c}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-schwartz2017exact}
+1. \textbf{Schwartz, S. E.} (2017). \emph{Exact approaches for bias
+detection and avoidance with small, sparse, or correlated categorical
+data} {[}PhD thesis{]}.
+
+\end{CSLReferences}
+
+\endgroup
+
+\vspace{7mm}
+
+\section{Publications: Online eBooks}\label{publications-online-ebooks}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\phantomsection\label{refs-cf745996f10a565a9a4ac9447acf67ce}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-eBookEncyclopedia}
+1. \textbf{Schwartz, S. E.,} \& Barrett, T. S. (2019).
+\emph{Encyclopedia of quantitative methods in r}. GitHub.
+\url{https://cehs-research.github.io/eBooks/}
+
+\bibitem[\citeproctext]{ref-eBook6600}
+2. \textbf{Schwartz, S. E.,} \& Barrett, T. S. (2018). \emph{Explaining
+psychological statistcs: A compantion in r}. GitHub.
+\url{https://sarbearschwartz.github.io/Quant_I/}
+
+\end{CSLReferences}
+
+\endgroup
+
+\clearpage
+
+\section{Directed Student Learning}\label{directed-student-learning}
+
+\subsection{\texorpdfstring{\textbf{Research Assistants for the
+Statistical Consulting
+Studio}}{Research Assistants for the Statistical Consulting Studio}}\label{research-assistants-for-the-statistical-consulting-studio}
+
+\begin{itemize}
+\tightlist
+\item
+  Liam O'Neil, 2022-2024
+\item
+  Demi Culianos, 2020-2021
+\item
+  Jeremy Haynes, 2019-2020
+\item
+  Ryan Becker, 2019
+\item
+  Joseph Jones, 2018-2019
+\item
+  Morgan Kawamura, 2018
+\item
+  Fred Hints, 2018
+\item
+  Andy Craig, 2017-2018
+\item
+  Tyson Barrett, 2016-2017
+\end{itemize}
+
+\vspace{7 mm}
+
+\section{Current Committees}\label{current-committees}
+
+\subsection{\texorpdfstring{\textbf{DOCTORAL}}{DOCTORAL}}\label{doctoral}
+
+\nopagebreak
+    \cventry{(in progress)}{Kory Klimczak}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Efficacy and engagement in digital acceptance and commitment therapy: A meta-analysis and investigation of mechanisms%
+\item Proposal defense: Sepember 23, 2024%
+\item Mentor: Dr Michael Levin%
+\end{itemize}}
+    \cventry{(in progress)}{Mikaela Drewel}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item TBI recency effects and time-to-AD using the CCMS and NACC data (genotype, medications, etc.)%
+\item Proposal: ETA January 2025%
+\item Mentor: Dr JoAnn Tschanz%
+\end{itemize}}
+    \cventry{(in progress)}{Juan Molano Gallardo}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Exploring the impact of discriminative stimuli and Pavlovian signals on self-control in rats, particularly in situations where the self-control alternative involves risk%
+\item Master's Thesis%
+\item Mentor: Dr. Greg Madden%
+\end{itemize}}
+    \cventry{(in progress)}{Niyonta Chowdhury}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item TBA%
+\item Added in place of Jamison Fargo (left USU)%
+\item Mentor: Dr. Melanie Domenech Rodriguez%
+\end{itemize}}
+    \cventry{(in progress)}{Diana Perez}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Combined efficacy of Counter-Stereotype Training (CST) and Situational Attribution Training (SAT) in reducing implicit racial bias%
+\item Proposal: currently drafting, spring 2024%
+\item Mentor: Dr. Melanie Domenech Rodriguez%
+\end{itemize}}
+    \cventry{(in progress)}{Chris Johnson}{Statistics}{Utah State University}{}{\begin{itemize}%
+\item Comprehensive examimation passed: July 2021%
+\item Proposal Defense: Febuary 23, 2023%
+\item Mentor: Dr. Chris Corcoran%
+\end{itemize}}
+
+\vspace{7 mm}
+
+\subsection{\texorpdfstring{\textbf{MASTERS}}{MASTERS}}\label{masters}
+
+\nopagebreak
+    \cventry{(in progress)}{Ben Juarez}{Psychology - Clinical Counseling}{Utah State University}{}{\begin{itemize}%
+\item CRIES-8 Validation with Latinx Youth%
+\item Proposal defense: April 13, 2022%
+\item Mentor: Dr. Melanie Domenech Rodriguez%
+\end{itemize}}
+
+\clearpage
+
+\section{Past Committees}\label{past-committees}
+
+\subsection{\texorpdfstring{\textbf{CHAIR}}{CHAIR}}\label{chair}
+
+\nopagebreak
+    \cventry{May 2021}{Amanda Hagman}{Psychology, Socio-Epidemiology Program}{Utah State University}{}{\begin{itemize}%
+\item Substance Misuse Transitions Between Adolescence Young Adulthood: Impacts on Young Adult Self-sufficiency%
+\item https://digitalcommons.usu.edu/etd/8050/%
+\end{itemize}}
+
+\vspace{7 mm}
+
+\subsection{\texorpdfstring{\textbf{DOCTORAL}}{DOCTORAL}}\label{doctoral-1}
+
+\nopagebreak
+    \cventry{September 2024}{Kaitlyn Kauzor}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Course of Disease Progression and Time to Death Among Different Dementia Types in a Population Based Study%
+\item https://digitalcommons.usu.edu/etd2023/346/%
+\item Mentor: JoAnn Tschanz%
+\end{itemize}}
+    \cventry{August 224}{Alex Hammond}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Development of a Multidimensional Index of Fall Risk for Older Adults: The Cache County Study%
+\item Final Defense: August 27, 2024%
+\item Mentor: JoAnn Tschanz%
+\end{itemize}}
+    \cventry{April 2024}{Stephanie (Crank) Avila}{Psychology - Brain and Cognition}{Utah State University}{}{\begin{itemize}%
+\item Online Deception: The Impact of Language in Test-Based Deception Detection%
+\item https://digitalcommons.usu.edu/etd2023/147/%
+\item Mentor: Dr. Chris Warren, Greg Madden%
+\end{itemize}}
+    \cventry{March 2024}{Megan Golson}{Psychology - Combined Program}{Utah State University}{}{\begin{itemize}%
+\item ADHD knowledge and its relationship to stigma and treatment decisions among parents%
+\item https://digitalcommons.usu.edu/etd2023/156/%
+\item Mentor: Dr. Maryellen McClain Verdose%
+\end{itemize}}
+    \cventry{Dec 2024}{Jill Ashby Harmon}{Curriculum and Instruction}{Utah State University}{}{\begin{itemize}%
+\item Relationships Between School, Teacher, and Feature Characteristics and Teachers’ Access to Features Within Digital Curriculum Resources for Mathematics Instruction%
+\item https://digitalcommons.usu.edu/etd/8798/%
+\item Mentor: Dr. Patricia Moyer-Packenham%
+\end{itemize}}
+    \cventry{April 2023}{Kandice Benalli}{Psychology - Combined Program}{Utah State University}{}{\begin{itemize}%
+\item Executive Functioning in Children with ASD and Co-occurring Neurodevelopmental Disorders: A Systematic Review and Quantitative Analysis%
+\item https://digitalcommons.usu.edu/etd/7693/%
+\item Mentor: Dr. Maryellen McClain Verdose%
+\end{itemize}}
+    \cventry{April 2023}{Cassity Havercamp}{Psychology - Combined Program}{Utah State University}{}{\begin{itemize}%
+\item App-Based Academic Interventions for Children With Autism%
+\item https://digitalcommons.usu.edu/etd/8887/%
+\item Mentor: Dr. Maryellen McClain Verdose%
+\end{itemize}}
+    \cventry{Aug 2023}{Olysola Omisakin}{Sociology}{Utah State University}{}{\begin{itemize}%
+\item Black-White Disparities in Body Mass Index Trajectories from Adolescence to Early Adulthood: Assessing the Roles of Adverse Childhood Experiences and Cumulative Exposure to Short Sleep Durations%
+\item https://digitalcommons.usu.edu/etd/8855/%
+\item Mentor: Dr. Eric Reither%
+\end{itemize}}
+    \cventry{Dec 2021}{Carly Fox}{Communicative Disorders and Deaf Education}{Utah State University}{}{\begin{itemize}%
+\item An Investigation into the Feasibility of Streamlining Language Sample Analysis through Computer-Automated Transcription and Scoring%
+\item https://digitalcommons.usu.edu/etd/8366/%
+\item Mentor: Dr. Sandra Gillam%
+\end{itemize}}
+    \cventry{Aug 2021}{Jordan Kugler}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Risk Factors for Early and Late Onset Depression and Subsequent Risk for Alzheimer's Disease and Related Dementias in an Older Adult Population%
+\item https://digitalcommons.usu.edu/etd/8200/%
+\item Mentor: Dr. Joann Tschanz%
+\end{itemize}}
+    \cventry{Aug 2021}{Elizabeth Kat Vernon}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Extended Maternal and Paternal Hereditary Risk for Alzheimer’s Disease Examined by Sex in a Sample of Community Dwelling Older Adults in Cache County, Utah%
+\item https://digitalcommons.usu.edu/etd/8189/%
+\item Mentor: Dr. Joann Tschanz%
+\end{itemize}}
+    \cventry{May 2021}{Kristen Rolf}{Disability Disciplines}{Utah State University}{}{\begin{itemize}%
+\item Investigating the Effectiveness  of Explicit,  Systematic  Mathematics Vocabulary  Instruction  for  Students in  Fourth  Grade%
+\item https://digitalcommons.usu.edu/etd/8550/%
+\item Mentor: Dr. Tim Slocum%
+\end{itemize}}
+    \cventry{Aug 2021}{Josh Mayti}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item Neurotrophic Factor Genetics of Cognitive Progression and Neuropsychiatric Symptom Presentation in Alzheimer's Disease and Related Disorders%
+\item https://digitalcommons.usu.edu/etd/8179/%
+\item Mentor: Dr. JoAnn Tschanz%
+\end{itemize}}
+    \cventry{May 2020}{J. Scott Crapo}{Human Development \& Family Studies}{Utah State University}{}{\begin{itemize}%
+\item Family Development and the Marital Relationship as a Developmental Process%
+\item https://digitalcommons.usu.edu/etd/7792/%
+\item Mentors: Dr. Kay Bradford, Dr. Ryan B. Seedall%
+\end{itemize}}
+    \cventry{May 2020}{Carla Orellana}{Special Education and Rehabilitation}{Utah State University}{}{\begin{itemize}%
+\item Working Memory and Syntactic Processing in Bilingual and Monolingual Children%
+\item https://digitalcommons.usu.edu/etd/7720/%
+\item Mentor: Dr. Ronald Gillam%
+\end{itemize}}
+    \cventry{Oct 2020}{Sarai Holdbrook}{Special Education and Rehabilitation}{Utah State University}{}{\begin{itemize}%
+\item Validation of a Brief Prosody Rating Scale for Children with Autism Spectrum Disorder%
+\item https://digitalcommons.usu.edu/etd/7830/%
+\item Mentor: Dr. Sandra Gillam%
+\end{itemize}}
+    \cventry{Aug 2019}{Eliza Jex}{Special Education and Rehabilitation}{Utah State University}{}{\begin{itemize}%
+\item An Assessment of Self-Determination Skills in Transition-Age Students with Disabilities Following Instruction Using the My Transition Portfolio Program%
+\item https://digitalcommons.usu.edu/etd/7569/%
+\item Mentor: Dr. Robert L. Morgan%
+\end{itemize}}
+
+\vspace{7 mm}
+
+\subsection{\texorpdfstring{\textbf{MASTERS}}{MASTERS}}\label{masters-1}
+
+\nopagebreak
+    \cventry{May 2022}{Joanna Coltrin}{Statistics}{Utah State University}{}{\begin{itemize}%
+\item Defining Areas of Interest Using Modified Voronoi Tessellations to Analyze Eye-Tracking Data%
+\item https://digitalcommons.usu.edu/etd/8508/%
+\item Mentor: Juergen Symanzik%
+\end{itemize}}
+    \cventry{Dec 2021}{Rylan Helstern}{Human Development \& Family Studies}{Utah State University}{}{\begin{itemize}%
+\item The Impact of COVID-19 and Telehealth Services on Attrition Rates in Psychotherapy%
+\item https://digitalcommons.usu.edu/etd/8433/%
+\item Mentor: Dave Robinson%
+\end{itemize}}
+    \cventry{May 2021}{Noa Reuveni}{Psychology}{Utah State University}{}{\begin{itemize}%
+\item The Effects of Cannabinoids on Stress-Coping Behaviors and Neuroendocrinological Measures in Chronic Unpredtictable Stress: A Preclinical Systematic Review and Meta-Analysis%
+\item https://digitalcommons.usu.edu/etd/8098/%
+\item Mentors: Dr. Sara Freeman, Dr. Scott Bates%
+\end{itemize}}
+    \cventry{May 2021}{Carly Fox}{Communicative Disorders and Deaf Education}{Utah State University}{}{\begin{itemize}%
+\item Removing Barriers to Language Sample Analysis: Computer-Automated Microstructure Scoring (CAMS)%
+\item https://digitalcommons.usu.edu/etd/8023/%
+\item Mentor: Dr. Sandra Gillam%
+\end{itemize}}
+
+\vspace{7 mm}
+
+\section{Current Memberships}\label{current-memberships}
+
+\begin{itemize}
+\tightlist
+\item
+  American Statistical Association (ASA)
+\end{itemize}
+
+\vspace{7 mm}
+
+\section{Service}\label{service}
+
+\nopagebreak
+    \cventry{Feb 2024}{Statistical Consultation: Power and other sample size considerations}{Institutional Review Board}{Utah State University}{}{\empty}
+    \cventry{May 2021}{APA Virtual Site Visit}{School Psychology PhD Program Accreditation}{Utah State University}{}{\empty}
+    \cventry{May 2020}{Interview potential grad students of Dean Al Smith}{Human Development and Family Studies Department}{Utah State University}{}{\empty}
+    \cventry{Spring 2020}{Review Journal Manuscript}{American Journal of Preventive Medicine}{}{}{\empty}
+    \cventry{2019-2020}{President}{Utah Chapter}{American Statistical Association}{}{\empty}
+    \cventry{2018-2019}{Vice President}{Utah Chapter}{American Statistical Association}{}{\empty}
+    \cventry{Spring 2019}{Borg Scholarship Committee Member}{Psychology Department}{Utah State University}{}{\empty}
+    \cventry{Fall 2017}{Search Committee Member, Data Cluster}{College of Education and Human Services, Office of Research Services}{Utah State University}{}{\empty}
+
+\section{Notes}\label{notes}
+
+\begin{itemize}
+\tightlist
+\item
+  This CV is reproducible; all the source code behind this CV is
+  available on \href{https://github.com/sarbearschwartz/jy_CV}{this
+  GitHub repo}.
+\end{itemize}
+
+
+\end{document}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
