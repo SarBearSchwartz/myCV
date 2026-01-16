@@ -1,3 +1,0 @@
-"0","df_eval %>% "
-"0","  dplyr::filter(course %in% c(""PSY 6600"", ""PSY 7650"")) %>% "
-"0","  dplyr::arrange(course, time)"

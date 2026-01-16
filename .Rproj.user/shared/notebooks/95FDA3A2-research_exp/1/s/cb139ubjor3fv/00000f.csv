@@ -1,6 +1,0 @@
-"0","readxl::read_excel(""data/research-experience.xlsx"") %>%
-  tidyr::fill(-why) %>%
-  vitae::detailed_entries(what, when, with, where, why)
-"
-"2","Error: `path` does not exist: ‘data/research-experience.xlsx’
-"

@@ -1,0 +1,17 @@
+"0","vitae::bibliography_entries(""bib/journal2025.bib"")
+"
+"1","Error at ""bib/journal2025.bib"" (line 91, column 3):"
+"1","
+"
+"1","unexpected 'p'"
+"1","
+"
+"1","  publisher={Wiley},"
+"1","
+"
+"1","  ^"
+"1","
+"
+"2","Error in rmarkdown::pandoc_citeproc_convert(file, type = ""json"") : 
+  Error 64 occurred building shared library.
+"
