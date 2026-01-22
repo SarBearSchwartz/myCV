@@ -1,17 +1,17 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.20)  16 JAN 2026 14:06
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.25)  22 JAN 2026 09:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **SchwartzSarah_CV_spr2025.tex
 (./SchwartzSarah_CV_spr2025.tex
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
 (./moderncv.cls
 Document Class: moderncv 2015/07/28 v2.0.0 modern curriculum vitae and letter document class
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count271
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
@@ -22,7 +22,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 274.
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -35,7 +35,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen148
 \ar@mcellbox=\box53
 \extrarowheight=\dimen149
@@ -54,7 +54,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 )) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 116.
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -141,14 +141,14 @@ LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count275
 \calc@Cskip=\skip68
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-11-06 L3 programming layer (loader) 
+Package: expl3 2025-08-13 L3 programming layer (loader) 
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+File: l3backend-xetex.def 2025-06-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count276
 \g__pdfannot_backend_int=\count277
 \g__pdfannot_backend_link_int=\count278
 ))
-Package: xparse 2025-10-09 L3 Experimental document command parser
+Package: xparse 2024-08-16 L3 Experimental document command parser
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
 \MT@toks=\toks21
@@ -197,7 +197,7 @@ Package: moderncviconsawesome 2024-07-18 v2.4.1 modern curriculum vitae icons: a
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 ) (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5-utex-helper.sty
 Package: fontawesome5-utex-helper 2022/05/02 v5.15.4 uTeX helper for fontawesome5
 LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on input line 69.
@@ -462,6 +462,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--106
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-TU-empty.cfg
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonstandard glyph set (RS)
 )
+
 LaTeX Font Info:    Trying to load font information for T1+DejaVuSansMono-TLF on input line 148.
 (c:/Users/A00315273/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/dejavu/T1DejaVuSansMono-TLF.fd
 File: T1DejaVuSansMono-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSansMono-TLF.
@@ -483,6 +484,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 
 ]
 
+
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
@@ -493,6 +495,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
 (Font)              scaled to size 9.41699pt on input line 218.
 
+
+
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
@@ -502,6 +506,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 ]
 Missing character: There is no ’ ("2019) in font ec-lmr10!
 
+
+
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
@@ -509,6 +515,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [4
 
 ]
+
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
@@ -527,6 +534,8 @@ Underfull \hbox (badness 1377) in paragraph at lines 322--322
  []
 
 
+
+
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
@@ -534,6 +543,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [6
 
 ]
+
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
@@ -543,6 +553,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 
 ]
 
+
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
@@ -550,6 +561,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [8]
 Missing character: There is no “ ("201C) in font ec-lmr10!
 Missing character: There is no ” ("201D) in font ec-lmr10!
+
+
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
@@ -559,6 +572,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 
 ]
 Missing character: There is no ’ ("2019) in font ec-lmro10!
+
+
 
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 10/[]32[] 
@@ -575,6 +590,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 Missing character: There is no ‘ ("2018) in font ec-lmro10!
 Missing character: There is no ’ ("2019) in font ec-lmro10!
 
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 11/[]32[] 
  []
@@ -587,6 +604,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [11
 
 ]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 12/[]32[] 
  []
@@ -597,6 +616,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [12]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 13/[]32[] 
  []
@@ -612,6 +633,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 File: SchwartzSarah_CV_spr2025_files/figure-latex/unnamed-chunk-10-1.png Graphic file (type bmp)
 <SchwartzSarah_CV_spr2025_files/figure-latex/unnamed-chunk-10-1.png>
 
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 14/[]32[] 
  []
@@ -624,6 +647,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [14
 
 ]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 15/[]32[] 
  []
@@ -634,6 +659,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [15]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 16/[]32[] 
  []
@@ -644,6 +671,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [16]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 17/[]32[] 
  []
@@ -656,8 +685,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [17]
 Missing character: There is no ı ("131) in font ec-lmr10!
 Missing character: There is no ́ ("301) in font ec-lmr10!
-Missing character: There is no ı ("131) in font ec-lmr10!
-Missing character: There is no ́ ("301) in font ec-lmr10!
+
+
 
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 18/[]32[] 
@@ -669,7 +698,10 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [18]
-Overfull \hbox (6.48532pt too wide) in paragraph at lines 1051--1056
+Missing character: There is no ı ("131) in font ec-lmr10!
+Missing character: There is no ́ ("301) in font ec-lmr10!
+
+Overfull \hbox (6.48532pt too wide) in paragraph at lines 1075--1080
 \T1/lmr/m/n/10.95 OLDER ADULTS WITH VAR-I-OUS SUB-TYPES OF DE-MEN-TIA: THE CACHE COUNTY
  []
 
@@ -679,6 +711,8 @@ Missing character: There is no ı ("131) in font ec-lmr10!
 Missing character: There is no ́ ("301) in font ec-lmr10!
 Missing character: There is no ı ("131) in font ec-lmr10!
 Missing character: There is no ́ ("301) in font ec-lmr10!
+
+
 
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 19/[]32[] 
@@ -690,6 +724,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [19]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 20/[]32[] 
  []
@@ -700,6 +736,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [20]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 21/[]32[] 
  []
@@ -712,6 +750,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [21
 
 ]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 22/[]32[] 
  []
@@ -725,9 +765,11 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 Missing character: There is no ı ("131) in font ec-lmr10!
 Missing character: There is no ́ ("301) in font ec-lmr10!
 
-Overfull \hbox (7.88872pt too wide) in paragraph at lines 1320--1324
+Overfull \hbox (7.88872pt too wide) in paragraph at lines 1344--1348
 \T1/lmr/m/n/10.95 Bohmer, K., & Nor-ton, M. (2010). TIM-ING OF OFF-SPRING DEATH IN PAR-ENTS'LIVES
  []
+
+
 
 
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
@@ -742,6 +784,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [23
 
 ]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 24/[]32[] 
  []
@@ -752,6 +796,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [24]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 25/[]32[] 
  []
@@ -762,6 +808,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [25]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 26/[]32[] 
  []
@@ -772,6 +820,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [26]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 27/[]32[] 
  []
@@ -784,6 +834,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [27
 
 ]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 28/[]32[] 
  []
@@ -798,6 +850,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 ]
 Missing character: There is no ’ ("2019) in font ec-lmr10!
 
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 29/[]32[] 
  []
@@ -810,15 +864,17 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [29
 
 ]
-Underfull \hbox (badness 3568) in paragraph at lines 1812--1812
+Underfull \hbox (badness 3568) in paragraph at lines 1836--1836
 []|\T1/lmr/bx/n/10.95 Cassity Haver-camp\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Psy-chol-ogy - Com-bined Pro-gram\T1/lmr/m/n/10.95 , Utah State
  []
 
 Missing character: There is no ’ ("2019) in font ec-lmr10!
 
-Underfull \hbox (badness 1226) in paragraph at lines 1847--1847
+Underfull \hbox (badness 1226) in paragraph at lines 1871--1871
 []|\T1/lmr/bx/n/10.95 J. Scott Crapo\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Hu-man De-vel-op-ment & Fam-ily Stud-ies\T1/lmr/m/n/10.95 , Utah State
  []
+
+
 
 
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
@@ -831,14 +887,16 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [30]
-Underfull \hbox (badness 2368) in paragraph at lines 1857--1857
+Underfull \hbox (badness 2368) in paragraph at lines 1881--1881
 []|\T1/lmr/bx/n/10.95 Sarai Hold-brook\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Spe-cial Ed-u-ca-tion and Re-ha-bil-i-ta-tion\T1/lmr/m/n/10.95 , Utah State
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1878--1878
+Underfull \hbox (badness 1490) in paragraph at lines 1902--1902
 []|\T1/lmr/bx/n/10.95 Rylan Hel-stern\T1/lmr/m/n/10.95 , \T1/lmr/m/sl/10.95 Hu-man De-vel-op-ment & Fam-ily Stud-ies\T1/lmr/m/n/10.95 , Utah State
  []
+
+
 
 
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
@@ -851,6 +909,8 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 (fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [31]
+
+
 Overfull \hbox (5.59653pt too wide) has occurred while \output is active
 []|\T1/lmr/m/it/10.95 32/[]32[] 
  []
@@ -864,22 +924,22 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 
 ] (./SchwartzSarah_CV_spr2025.aux)
  ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
  ***********
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `SchwartzSarah_CV_spr2025.out' has not changed.
-(rerunfilecheck)             Checksum: 9EAAB31E4358985DC245D0A5F52C7E9F;8178.
+(rerunfilecheck)             Checksum: EA4C798C4E35E051C9CFAECAB4A5098D;8458.
  ) 
 Here is how much of TeX's memory you used:
- 14247 strings out of 470195
- 234650 string characters out of 5476821
- 697835 words of memory out of 5000000
- 42614 multiletter control sequences out of 15000+600000
- 683581 words of font info for 75 fonts, out of 8000000 for 9000
+ 14250 strings out of 470457
+ 234737 string characters out of 5489158
+ 694692 words of memory out of 5000000
+ 42355 multiletter control sequences out of 15000+600000
+ 682685 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 92i,13n,106p,1021b,870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,13n,106p,1021b,873s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on SchwartzSarah_CV_spr2025.pdf (32 pages).

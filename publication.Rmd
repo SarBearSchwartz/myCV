@@ -53,6 +53,24 @@ vitae::bibliography_entries("bib/journalpress.bib")
 
 \vspace{7mm}
 
+# Publications: Refereed Journal Papers - 2026
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<!-- ::: {#refs_journal2026} -->
+<!-- ::: -->
+
+```{r}
+vitae::bibliography_entries("bib/journal2026.bib")
+```
+
+\endgroup
+
+
+\vspace{7mm}
+
 # Publications: Refereed Journal Papers - 2025
 
 \begingroup
